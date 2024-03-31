@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="cache与内存，OKcacheline对齐：建议，只读数据与可读可写数据分开  每个高速缓存行完全是在一个突发读操作周期中进行填充或者下载的。即使处理器只存取一个字节的存储器，高速缓存控制器也启动整个存取器访问周期并请求整个数据块。 共享内存的并行计算，有可能会出现＂伪共享＂问题．比如，两个处理器各要访问一个word，这两个word却存在于同一个cache line大小的区域里，这时，从应用逻辑">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cacheline">
+<meta property="og:url" content="http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cacheline/index.html">
+<meta property="og:site_name" content="臻">
+<meta property="og:description" content="cache与内存，OKcacheline对齐：建议，只读数据与可读可写数据分开  每个高速缓存行完全是在一个突发读操作周期中进行填充或者下载的。即使处理器只存取一个字节的存储器，高速缓存控制器也启动整个存取器访问周期并请求整个数据块。 共享内存的并行计算，有可能会出现＂伪共享＂问题．比如，两个处理器各要访问一个word，这两个word却存在于同一个cache line大小的区域里，这时，从应用逻辑">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-31T14:39:35.013Z">
+<meta property="article:modified_time" content="2024-03-31T14:39:35.013Z">
+<meta property="article:author" content="odnwo">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cacheline/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cacheline/","path":"2024/03/31/work/项目相关/brpc/cacheline/","title":"cacheline"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>cacheline | 臻</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">臻</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">我终将学会要亲吻<br>将我抛向万古磐石的波浪</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="odnwo"
+      src="/images/xiaowangzi.jpg">
+  <p class="site-author-name" itemprop="name">odnwo</p>
+  <div class="site-description" itemprop="description">未识乾坤大 也怜草木青</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">141</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cacheline/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/xiaowangzi.jpg">
+      <meta itemprop="name" content="odnwo">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="臻">
+      <meta itemprop="description" content="未识乾坤大 也怜草木青">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="cacheline | 臻">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          cacheline
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/" itemprop="url" rel="index"><span itemprop="name">work</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">项目相关</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/" itemprop="url" rel="index"><span itemprop="name">brpc</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>cache与内存，OK<br>cacheline对齐：建议，只读数据与可读可写数据分开</p>
+<ul>
+<li>每个高速缓存行完全是在一个突发读操作周期中进行填充或者下载的。即使处理器只存取一个字节的存储器，高速缓存控制器也启动整个存取器访问周期并请求整个数据块。</li>
+<li>共享内存的并行计算，有可能会出现＂伪共享＂问题．比如，两个处理器各要访问一个word，这两个word却存在于同一个cache line大小的区域里，这时，从应用逻辑层面说，这两个处理器并没有共享内存，因为他们访问的是不同的内容（不同的word）。但是因为cache line的存在和限制，这两个CPU要访问这两个不同的word时，却一定要访问同一个cache line块，产生了事实上的“共享”。显然，由于cache line大小限制带来的这种“伪共享”是我们不想要的，会浪费系统资源。</li>
+</ul>
+<p>cache同步：当一个 CPU 修改高速缓存行中的字节时，计算机中的其它 CPU会被通知，它们的高速缓存将视为无效。</p>
+<ul>
+<li>MESI协议：Modifyied exclusive share invalid</li>
+<li><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1548942">https://cloud.tencent.com/developer/article/1548942</a></li>
+</ul>
+<p>既然缓存一致性已经由硬件完成了，那为什么多个线程操作同一个变量仍然会有问题？<br>原因：不是原子操作导致的？</p>
+<p>下面的例子：<br>increase一个变量，CPU微观指令级别分成3步操作。1) 先read变量的值到CPU内存寄存器；2) 对寄存器的值递增；3) 将寄存器的值写回变量。例如不使用原子指令的情况下在多个CPU上执行以下increase函数。<br>int counter &#x3D; 0;</p>
+<p>void increase(void)<br>{<br>        counter++;<br>}</p>
+<p>例如2个CPU得系统，初始值counter为0。在两个CPU上同时执行以上increase函数。可能出现如下操作序列：</p>
+<ul>
+<li>+———————-+———————-+</li>
+</ul>
+<p>   |    |    CPU0 operation    |    CPU1 operation    |<br>   |    +———————-+———————-+<br>   |    | read counter (&#x3D;&#x3D; 0)  |                      |<br>   |    +———————-+———————-+<br>   |    |       increase       | read counter (&#x3D;&#x3D; 0)  |<br>   |    +———————-+———————-+<br>   |    | write counter (&#x3D;&#x3D; 1) |       increase       |<br>   |    +———————-+———————-+<br>   |    |                      | write counter (&#x3D;&#x3D; 1) |<br>   |    +———————-+———————-+<br>   V<br>timeline<br>我们可以清晰地看到，当CPU0读取counter的值位0后，在执行increase操作的同时，CPU1也读取counter变量，同样counter的值依然是0。随后CPU0和CPU1先后将1的值写入内存。实际上，我们想执行两次increase操作，我应该得到counter值为2。但是实际上得到的是1。这不是我们想要的结果。</p>
+<p>既然有cache一致性算法，为什么会出现这种情况呢？</p>
+<p>后续表述：<br>为了解决这个问题，硬件引入原子自增指令。保证CPU0递增原子变量counter之间，不被其他CPU执行自增指令导致不想要的结果。硬件是如何实现原子操作期间不被打断呢？</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cache%E4%BC%AA%E5%85%B1%E4%BA%AB/" rel="prev" title="cache伪共享">
+                  <i class="fa fa-angle-left"></i> cache伪共享
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/bthread%E6%A0%88%E5%A4%A7%E5%B0%8F/" rel="next" title="bthread栈大小">
+                  bthread栈大小 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">odnwo</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="HTTP和RPC都是应用层协议。不用HTTP的原因：  消息体太大，RPC通信对性能有要求 HTTP无状态，同步短连接那HTTP2呢？既然基于TCP优于HTTP，gRPC为什么选择基于HTTP2？http2使用了二进制协议，两边都维护了头字段的对应表，所以头已经很小了。同时http2也会保证长连接，不用每次都建立新的连接。http2不是采用字符串的协议，总体大小会小很多在设计rpc的时候，是为了高">
+<meta property="og:type" content="article">
+<meta property="og:title" content="既然HTTP已经可以了，为什么还需要用RPC">
+<meta property="og:url" content="http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E6%97%A2%E7%84%B6HTTP%E5%B7%B2%E7%BB%8F%E5%8F%AF%E4%BB%A5%E4%BA%86%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E9%9C%80%E8%A6%81%E7%94%A8RPC/index.html">
+<meta property="og:site_name" content="臻">
+<meta property="og:description" content="HTTP和RPC都是应用层协议。不用HTTP的原因：  消息体太大，RPC通信对性能有要求 HTTP无状态，同步短连接那HTTP2呢？既然基于TCP优于HTTP，gRPC为什么选择基于HTTP2？http2使用了二进制协议，两边都维护了头字段的对应表，所以头已经很小了。同时http2也会保证长连接，不用每次都建立新的连接。http2不是采用字符串的协议，总体大小会小很多在设计rpc的时候，是为了高">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/http-protocol.png">
+<meta property="article:published_time" content="2024-03-31T14:39:35.015Z">
+<meta property="article:modified_time" content="2024-03-31T14:39:35.015Z">
+<meta property="article:author" content="odnwo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/http-protocol.png">
+
+
+<link rel="canonical" href="http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E6%97%A2%E7%84%B6HTTP%E5%B7%B2%E7%BB%8F%E5%8F%AF%E4%BB%A5%E4%BA%86%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E9%9C%80%E8%A6%81%E7%94%A8RPC/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E6%97%A2%E7%84%B6HTTP%E5%B7%B2%E7%BB%8F%E5%8F%AF%E4%BB%A5%E4%BA%86%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E9%9C%80%E8%A6%81%E7%94%A8RPC/","path":"2024/03/31/work/项目相关/brpc/既然HTTP已经可以了，为什么还需要用RPC/","title":"既然HTTP已经可以了，为什么还需要用RPC"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>既然HTTP已经可以了，为什么还需要用RPC | 臻</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">臻</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">我终将学会要亲吻<br>将我抛向万古磐石的波浪</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="odnwo"
+      src="/images/xiaowangzi.jpg">
+  <p class="site-author-name" itemprop="name">odnwo</p>
+  <div class="site-description" itemprop="description">未识乾坤大 也怜草木青</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">141</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E6%97%A2%E7%84%B6HTTP%E5%B7%B2%E7%BB%8F%E5%8F%AF%E4%BB%A5%E4%BA%86%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E9%9C%80%E8%A6%81%E7%94%A8RPC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/xiaowangzi.jpg">
+      <meta itemprop="name" content="odnwo">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="臻">
+      <meta itemprop="description" content="未识乾坤大 也怜草木青">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="既然HTTP已经可以了，为什么还需要用RPC | 臻">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          既然HTTP已经可以了，为什么还需要用RPC
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/" itemprop="url" rel="index"><span itemprop="name">work</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">项目相关</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/" itemprop="url" rel="index"><span itemprop="name">brpc</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>HTTP和RPC都是应用层协议。<br>不用HTTP的原因：</p>
+<ol>
+<li>消息体太大，RPC通信对性能有要求</li>
+<li>HTTP无状态，同步短连接<br>那HTTP2呢？<br>既然基于TCP优于HTTP，gRPC为什么选择基于HTTP2？<br>http2使用了二进制协议，两边都维护了头字段的对应表，所以头已经很小了。同时http2也会保证长连接，不用每次都建立新的连接。<br>http2不是采用字符串的协议，总体大小会小很多<br>在设计rpc的时候，是为了高性能和大吞吐量场景，基于tcp性能更快。压力不大场景，http可以满足。grpc做的也很好。</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzI4OTA3NDQ0Nw==&mid=2455544244&idx=1&sn=8b64cb748898b4af6668c47ef978c6bb&chksm=fb9cbdd4cceb34c2e086e2e6bedc1c8138dd2733228808d7b7b71f1aa679a5de0a5ea352fa07&scene=21#wechat_redirect">https://mp.weixin.qq.com/s?__biz=MzI4OTA3NDQ0Nw==&amp;mid=2455544244&amp;idx=1&amp;sn=8b64cb748898b4af6668c47ef978c6bb&amp;chksm=fb9cbdd4cceb34c2e086e2e6bedc1c8138dd2733228808d7b7b71f1aa679a5de0a5ea352fa07&amp;scene=21#wechat_redirect</a></p>
+<p><img src="/images/http-protocol.png" alt="Image"></p>
+<p>RPC(Remote Procedure Call，远程过程调用)是一种计算机通信协议，允许调用不同进程空间的程序。RPC 的客户端和服务器可以在一台机器上，也可以在不同的机器上。程序员使用时，就像调用本地程序一样，无需关注内部的实现细节。<br>不同的应用程序之间的通信方式有很多，比如浏览器和服务器之间广泛使用的基于 HTTP 协议的 Restful API。与 RPC 相比，Restful API 有相对统一的标准，因而更通用，兼容性更好，支持不同的语言。HTTP 协议是基于文本的，一般具备更好的可读性。但是缺点也很明显：</p>
+<ul>
+<li>Restful 接口需要额外的定义，无论是客户端还是服务端，都需要额外的代码来处理，而 RPC 调用则更接近于直接调用。</li>
+<li>基于 HTTP 协议的 Restful 报文冗余，承载了过多的无效信息，而 RPC 通常使用自定义的协议格式，减少冗余报文。</li>
+<li>RPC 可以采用更高效的序列化协议，将文本转为二进制传输，获得更高的性能。</li>
+<li>因为 RPC 的灵活性，所以更容易扩展和集成诸如注册中心、负载均衡等功能。</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%81%AB%E7%84%B0%E5%9B%BE%E8%A7%A3%E8%AF%BB/" rel="prev" title="火焰图解读">
+                  <i class="fa fa-angle-left"></i> 火焰图解读
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A6%82%E4%BD%95%E8%B0%83%E5%BA%A6%E7%BA%BF%E7%A8%8B/" rel="next" title="操作系统如何调度线程">
+                  操作系统如何调度线程 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">odnwo</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="wget http:&#x2F;&#x2F;static.dpdk.org&#x2F;rel&#x2F;dpdk-19.11.tar.gz解压：tar -xvf dpdk-19.11.5.tar.xz修改配置文件：vim config&#x2F;common_baseCONFIG_RTE_LIBRTE_MLX5_PMD&#x3D;ymake -j 报错1：dpdk error: wrong number of arguments spe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="dpdk编译">
+<meta property="og:url" content="http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/dpdk/dpdk%E7%BC%96%E8%AF%91/index.html">
+<meta property="og:site_name" content="臻">
+<meta property="og:description" content="wget http:&#x2F;&#x2F;static.dpdk.org&#x2F;rel&#x2F;dpdk-19.11.tar.gz解压：tar -xvf dpdk-19.11.5.tar.xz修改配置文件：vim config&#x2F;common_baseCONFIG_RTE_LIBRTE_MLX5_PMD&#x3D;ymake -j 报错1：dpdk error: wrong number of arguments spe">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-31T14:39:35.017Z">
+<meta property="article:modified_time" content="2024-03-31T14:39:35.017Z">
+<meta property="article:author" content="odnwo">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/dpdk/dpdk%E7%BC%96%E8%AF%91/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/dpdk/dpdk%E7%BC%96%E8%AF%91/","path":"2024/03/31/work/项目相关/dpdk/dpdk编译/","title":"dpdk编译"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>dpdk编译 | 臻</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">臻</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">我终将学会要亲吻<br>将我抛向万古磐石的波浪</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="odnwo"
+      src="/images/xiaowangzi.jpg">
+  <p class="site-author-name" itemprop="name">odnwo</p>
+  <div class="site-description" itemprop="description">未识乾坤大 也怜草木青</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">141</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/dpdk/dpdk%E7%BC%96%E8%AF%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/xiaowangzi.jpg">
+      <meta itemprop="name" content="odnwo">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="臻">
+      <meta itemprop="description" content="未识乾坤大 也怜草木青">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="dpdk编译 | 臻">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          dpdk编译
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/" itemprop="url" rel="index"><span itemprop="name">work</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">项目相关</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/dpdk/" itemprop="url" rel="index"><span itemprop="name">dpdk</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>wget <a target="_blank" rel="noopener" href="http://static.dpdk.org/rel/dpdk-19.11.tar.gz">http://static.dpdk.org/rel/dpdk-19.11.tar.gz</a><br>解压：<br>tar -xvf dpdk-19.11.5.tar.xz<br>修改配置文件：<br>vim config&#x2F;common_base<br>CONFIG_RTE_LIBRTE_MLX5_PMD&#x3D;y<br>make -j</p>
+<p>报错1：<br>dpdk error: wrong number of arguments specified for ‘deprecated’ attribute<br>设置PATH路径为gcc-8.2的路径（why? TODO）</p>
+<p>报错2：<br>numa.h numaif.h等文件找不到<br>解决这个问题的思路是：找到机器上对应的文件，然后拷贝到编译器的include目录中<br>但是机器上不一定有这两个文件<br>通过运行下面的命令安装：<br>yum install numactl-devel*x86_64<br>安装后就可以在&#x2F;usr&#x2F;include&#x2F;下面找到这两个文件了</p>
+<p>报错3：<br>error: unknown type name ‘u16’<br>这个是内核的原因，内核下载headers就可以了<br>我们下载编译好的内核，并将C_INCLUDE_PATH路径指到其include目录中<br>需要配置的路径有：(括号表示可以不要)<br>PATH: 编译器的bin目录:$PATH<br>C_INCLUDE_PATH: 内核的include目录:(编译器的include目录):&#x2F;usr&#x2F;include&#x2F;<br>备注：内核的include目录为在【内核路径&#x2F;usr&#x2F;inlcude】<br>LIBRARY_PATH: (编译器的lib目录):&#x2F;usr&#x2F;lib64</p>
+<p>执行命令为：<br>PATH&#x3D;xxx C_INCLUDE_PATH&#x3D;xxx LIBRARY_PATH&#x3D;xxx make -j install T&#x3D;x86_64-native-linuxapp-gcc</p>
+<p>更细节的一些说明：<br>infiniband&#x2F;verbs.h头文件在&#x2F;usr&#x2F;include&#x2F;目录下，所以C_INCLUDE_PATH必须有&#x2F;usr&#x2F;include&#x2F;路径<br> error: wrong number of arguments specified for ‘deprecated’ attribute，此错误是因为PATH的bin目录问题</p>
+<p>报错4：<br>fatal error: linux&#x2F;compiler-gcc8.h: No such file or directory<br>查看报错信息的上下文发现，报错出现在kni模块和igb_uio模块，我们设置其不编译<br>vim config&#x2F;defconfig_x86_64-native-linux-gcc<br>添加下面两行：<br>CONFIG_RTE_EAL_IGB_UIO&#x3D;n<br>CONFIG_RTE_KNI_KMOD&#x3D;n</p>
+<p>知识补充：<br>#添加.so搜索路径<br>export LD_LIBRARY_PATH&#x3D;$LD_LIBRARY_PATH:&#x2F;path&#x2F;to&#x2F;lib</p>
+<p>#添加.a搜索路径<br>LIBRARY_PATH&#x3D;$LIBRARY_PATH:&#x2F;path&#x2F;to&#x2F;lib</p>
+<p>#添加bin搜索路径<br>export PATH&#x3D;$PATH:&#x2F;path&#x2F;to&#x2F;bin</p>
+<p>#添加GCC的include文件搜索路径<br>export C_INCLUDE_PATH&#x3D;$C_INCLUDE_PATH:&#x2F;path&#x2F;to&#x2F;include</p>
+<p>#添加G++的include文件搜索路径<br>export CPLUS_INCLUDE_PATH&#x3D;$CPLUS_INCLUDE_PATH:&#x2F;path&#x2F;to&#x2F;include</p>
+<p>当环境变量和命令行选项被同时使用时，编译器按下面的次序搜索目录：</p>
+<ol>
+<li>从左到右搜索由命令行「-I」和「-L」指定的目录；</li>
+<li>由环境变量，比如「C_INCLUDE_PATH」、「CPLUS_INCLUDE_PATH」和「LIBRARY_PATH」指定的目录；</li>
+<li>默认的系统目录。</li>
+</ol>
+<p>参考链接：<br><a target="_blank" rel="noopener" href="https://ixyzero.com/blog/archives/2840.html">https://ixyzero.com/blog/archives/2840.html</a></p>
+<p>PATH&#x3D;&#x2F;opt&#x2F;compiler&#x2F;gcc-8.2&#x2F;bin&#x2F;:$PATH C_INCLUDE_PATH&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;KERNEL-4.14&#x2F;KERNEL_4.14-36&#x2F;baidu&#x2F;kernel&#x2F;linux-4-14&#x2F;usr&#x2F;include:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;opt&#x2F;compiler&#x2F;gcc-8.2&#x2F;lib:&#x2F;usr&#x2F;lib64&#x2F; make -j install T&#x3D;x86_64-native-linuxapp-gcc</p>
+<p>yes | cp -L &#x2F;home&#x2F;users&#x2F;dujing05&#x2F;DPDK&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc&#x2F;lib&#x2F;* lib&#x2F;</p>
+<p>yes | cp -L &#x2F;home&#x2F;users&#x2F;dujing05&#x2F;DPDK&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc&#x2F;include&#x2F;* include&#x2F;</p>
+<p>扩展1：<br>使能debug<br>EXTRA_CFLAGS&#x3D;”-O0 -g” make -j install T&#x3D;x86_64-native-linuxapp-gcc<br>确认debug信息添加成功：readelf -S .&#x2F;x86_64-native-linuxapp-gcc&#x2F;lib&#x2F;librte_bus_dpaa.a | grep debug</p>
+<p>dpdk编译后库文件目录：<br>.a文件目录：x86_64-native-linuxapp-gcc&#x2F;lib&#x2F;<br>.h文件目录：x86_64-native-linuxapp-gcc&#x2F;include&#x2F;</p>
+<p>拷贝需要用cp -L</p>
+<p>扩展2：编译lgb_uio和kni模块：<br>编译选项不变，从config&#x2F;defconfig_x86_64-native-linux-gcc中删除相关模块，重新编译即可<br>安装模块：<br>insmod </p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/dpdk/netmap%E5%92%8Cdpdk/" rel="prev" title="netmap和dpdk">
+                  <i class="fa fa-angle-left"></i> netmap和dpdk
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/dpdk/dpdk%E7%BB%91%E6%A0%B8%E4%B9%8B%E5%90%8E%E4%B8%BA%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%B0%B1%E4%B8%8D%E4%BC%9A%E5%88%86%E9%85%8D%E5%85%B6%E5%AE%83%E7%BA%BF%E7%A8%8B%E5%88%B0%E6%AD%A4core/" rel="next" title="dpdk绑核之后为什么操作系统就不会分配其它线程到此core">
+                  dpdk绑核之后为什么操作系统就不会分配其它线程到此core <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">odnwo</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
