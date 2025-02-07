@@ -4,6 +4,508 @@
   
     
     <entry>
+      <title>tar</title>
+      <link href="/2025/02/07/work/Tools/tar/"/>
+      <url>/2025/02/07/work/Tools/tar/</url>
+      
+        <content type="html"><![CDATA[<p>.tar.xz<br>tar xvJf  ***.tar.xz</p><p>解压 tar zxvf 文件名.tar.gz<br>压缩 tar zcvf 文件名.tar.gz 待压缩的文件名</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> Tools </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>linux文件传输</title>
+      <link href="/2025/02/07/work/Tools/linux%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/"/>
+      <url>/2025/02/07/work/Tools/linux%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/</url>
+      
+        <content type="html"><![CDATA[<p>nc传输文件；<br>nc $ip 8000 &lt; file<br>nc -l 8000 &gt; file</p><p>用python开启一个简单的服务器：<br>python -m SimpleHTTPServer 8080<br>wget <a href="http://ip:8080/file.txt">http://ip:8080/file.txt</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> Tools </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cp软链接</title>
+      <link href="/2025/02/07/work/Tools/cp%E8%BD%AF%E9%93%BE%E6%8E%A5/"/>
+      <url>/2025/02/07/work/Tools/cp%E8%BD%AF%E9%93%BE%E6%8E%A5/</url>
+      
+        <content type="html"><![CDATA[<p>若要cp软链接对应的真实文件，cp -L </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> Tools </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PDF因为有密码无法打印</title>
+      <link href="/2025/02/07/work/Tools/pdf%E6%96%87%E4%BB%B6%E8%A7%A3%E5%AF%86/"/>
+      <url>/2025/02/07/work/Tools/pdf%E6%96%87%E4%BB%B6%E8%A7%A3%E5%AF%86/</url>
+      
+        <content type="html"><![CDATA[<p>PDF因为有密码无法打印：<br><a href="https://www.ilovepdf.com/zh-cn/unlock_pdf">https://www.ilovepdf.com/zh-cn/unlock_pdf</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> Tools </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vscode_markdown_paste_config</title>
+      <link href="/2025/02/07/odnwo/Skills/vscode_markdown_paste_config/"/>
+      <url>/2025/02/07/odnwo/Skills/vscode_markdown_paste_config/</url>
+      
+        <content type="html"><![CDATA[<p>editor.experimental.pasteActions.enabled<br>markdown.experimental.copyFiles.destination</p><p>**&#x2F;*:&#x2F;images_pasted&#x2F;${documentFileName}&#x2F;</p><p>hexo, 图片路径中不能包含下划线，否则不能显示</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> Skills </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo_blog</title>
+      <link href="/2025/02/07/odnwo/Skills/blog/"/>
+      <url>/2025/02/07/odnwo/Skills/blog/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="wrong password" data-whm="wrong check result">  <script id="hbeData" type="hbeData" data-hmacdigest="cba2e7c13bdba0ff5e61f6b8ae73a3c1a1353ef63c132de47b08d4a775a79e0f">1c4f476f3e7125f5cf24ac6b2eb4579363f22681d3bcff5baca7ac4a1aa0f77aaca0fc2320bde30333f99f6fccdfd97858918a7c1ce86b53acab3f29b242a9ba597378a190df45ebe9b79b08bea49df6e73bd5fc9771eacecd581e7fb68e8cdb45e5adf6ed6f9223242a9ed092260269a84f54abe6abad515284f0d03bec2c419fb2b1ac51b8e5239b97b05cdf8914f2a349f03961bc4ce7ad0aa6d19ff980e9f6f544ea0ae147fae8e7023a3f71c0e0b60bb1d123c9b9a705f3b3f1e27cfca691bfa9570c8353a0b1b81ad747419d81f077761e6351508b9779cced8c33139960c312049a258c0bb8fde627138ce1cea33e0de6db5223678cabd508d085fe37d71cf29dcf0f8dd03a4ec5dae7d2172ef9594ccb3dc934a90cb01b509b2a15979fd9a33ed8cd8af99228194200cba56e2ea79640b27a4a0ae45b20c5426020079cef49876001fcf7b0c6a2f47ad479cc</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">The blog is private</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> Skills </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> private </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>typingclub</title>
+      <link href="/2025/02/07/odnwo/Skills/typing/"/>
+      <url>/2025/02/07/odnwo/Skills/typing/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="wrong password" data-whm="wrong check result">  <script id="hbeData" type="hbeData" data-hmacdigest="1c5e2515388ae10a26858897b98a39b42f56f338f5a549052e11f52b001467ca">1c4f476f3e7125f5cf24ac6b2eb457935cf95778e2714f3e2214fe91ce8db16d47c6437d929f6ecc0ee5a03fedf2930a15098e8268c1db45062102df1e272b880b026f8b97fdb7bbb906f2a0f8fa713d04b155ed94ef511ae32acf5ade0915688096a55fc639d8f2e01c86b67556d40b55b612e3541501f1a80ed22cab02918d6ca38d386390bc4acdef8aa0b51a09a6ff7eff4cca3d9d73f2efa0715ae1cabbac516a9292a73e4aeaaeb788fd5020d13f4bfabc243ab9b4d5d8a8edc85c468952b37d74851ed3cd4c3cc171a9ca5f85d5c433ae2982bdff5ef445cd920c27f6e01f8fe05f97a638a18d3a08becb6d906d1d7f02c26ba9f98d64b31ae9654074188fb0a003688b0fa9baa4227362d1e784230e213f09895ca8a3e13a5b08b0db2cc0450ac3e2ef0f7ec89ad33c43ebbd75bd0a70535a5d46396917bb239ca751ed54b0a59ad83c7dc875e56ba24764cbc33bbf0550cdb7bf5cfd61510a7660ca0bdd633fc6b163794d605a6362d41d2592a3a6cc5bd675565743bc5ff7b739f97fe14237e37831a1e1eaf6883e58409aea8ff6beb332de75fc57ecea29c76846ae76bf7cc79ea706409f5c43710e584935331a69c47c21be53cc944d73616efe33af7b21a53d336a671e1fc73a269d7854e6c5a4ed61f205d0d1c05c19cdfd6527b6cc9d0efa6ae05c8f016bf13dcce8b97d9945702bee5b9ce74968fb524d14f47427c9180abb481e82cee9f42340ba3e7b4bc7af6e904a8288c600b336ab1cc35b458723ea8f3bcc885e17eb154e2a247299eb0d2fb504386db6ab767b578c8a10ac2983f25ad9618be8389882f7b7d19c2d1dce8bd5a9b1ff214743943861</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">The blog is private</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> Skills </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> private </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>revolut</title>
+      <link href="/2025/02/07/odnwo/Money/revolut/"/>
+      <url>/2025/02/07/odnwo/Money/revolut/</url>
+      
+        <content type="html"><![CDATA[<p>revolut可以创建虚拟卡，用于付款，防止被盗刷<br>metamask用apple pay一直付款失败，用revolut的虚拟卡可以成功付款</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> Money </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>猎罪图鉴</title>
+      <link href="/2025/02/07/odnwo/ME/PRIVATE/%E7%8C%8E%E7%BD%AA%E5%9B%BE%E9%89%B4/"/>
+      <url>/2025/02/07/odnwo/ME/PRIVATE/%E7%8C%8E%E7%BD%AA%E5%9B%BE%E9%89%B4/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="wrong password" data-whm="wrong check result">  <script id="hbeData" type="hbeData" data-hmacdigest="030eb6dd6c52520c82f141fa322c5247e989217a5409737c9da64cc55f026d1c">1c4f476f3e7125f5cf24ac6b2eb45793966b2f71d183b52c78c7bb71a64394795f218fe9ab56fa9b001b4aa098bb0dc6b9aa2879e000b37306f61b2526270be9e675d1bdb645065d3d90862891bad6f7aad8eb1321dc66703fadec95195ebb77a7fab152b54d7509aa4afd60c6d190c0f0114892546071472ba4c87dc6320c50bb68b6d84c33fa932bd1a498056f3756a81320e6527d6425a0a95c95286e281248578a918b98624c8ea69db810f5779e2f369dd5a9e997c3280848ed06a460c718005a3e5341aeb6cea6ae6e08222148fa541b7ffb90539e9fa0b6f15a878ecbf5f139bc5e53c651d75a08943a617bf53f1793e8bd03a611bfe7f95b0d88a287890cfac044b7655c1840c758b89eb7f5fa959da49705dc126e1095faf2e4022c743634df345e8c1dc2579a2b0dd1e24e7f498ccc94a93e11397f01f85f4d2a8658f5506593c2d142ee0dbd7ecfd33116bc4e2b9c3fe8eb96627a23cbcbb990ce8b2decc7fbee9ee2f5b5b6bad94f976d78a68d8d2add5c70bc014d3d936f4db84f361901f030f1702d8cbcd518c05e6727ce72facb8b4f893bdeca6579c012b021879574ed0424c7ec911e6f66b19b8187273acf4e5dcf447e39079db05093b972ca0638ef914aa4b93268c28da1cde19ec74f21313e256aca5a3995d1b4c533bf02c9bfa78df5cf9f05ca6b2a54bd9337d41a54f30759cd2c7777d0a93ff8827b9f589792bb23759181add5110be7955ac7bdbfa9d1c799cc7745780dca28909424e17f9fd4340d831eb087b7f38c568b1e0b26987d7581aa3a00578542bad8f7436ca72ab56b23d92cd1cd90c1702c5fd859d12c7eeff36fbec50778b2f5f8505bfe349f1d3fa27a7b3b5b98f44e38edb94e84febe92a6839598e2d988f2a513a6f34a24e509cf52c6fff12c60776a46768a4e97fdc2ac115705b21e3bf497cf1fe1126661a9c21d068f4cb0c2498cae5dc11bdac1da3cd86da1afc68bc4bc9c37b5e2d309654954358944a13d40c7f3f936adc5d0d76b4dbfdc332d8a24de7bbf9d6a70cbbae56a13d636c1e00ef6825f76041604f1452ab657074a8d3c2d53689dda9f54bce8ec189a41e488430f30a667967b217324c02bf50905a9c2be90fadd8fdbc8e0efc97dd592ac4c10b79f862785203ae2a21ab519735aa82861f44ade847bba4a7f9c1a25c92b54f5d0f7b3af29469f4529b5a3a69f00b089235be79d60a68f57cd006bf67e03816f49dd9c39f771756a396f80a0e3f74c18b5d3eb6db2b0bad8d779c800259dc97f9e18dec81cf44c502c1d22eb63ada030521d39ff8b66c4def02d5282a82452e2bff8ba76027ce56eb91a06764dce5012520d06a8780347b847b6b9574b6a5d78c4ecfbaca565be125016245be4cfe031401db76aba738d0c9decfd15ced792705c25a5af795ff3c9a6773111058613b7ffa32e430189feb3d2498b80f2cfed65b620f60e899018d7ed7fe87bcaeccdc74abc90bbbedf630de9be4995e8699081646be108dce45f6ebce669e6ef47f2cffdfb66c658cc55317a2d20446487082085f8feca56ea77653c952e4200754890189cfdc5d11fb6bb6d3a4b6216f3e3a0250133d2aea18583d007ba2fe5e97ab4fc07f30eb7761da4c5e014b7407dd1032a2377c67cefbb32822760535a2365429be0889432ba89c37b5abbbec88d4c04fcb41b71f70ac382adab4c37a02be76e0cf84ef07230d5c8ebc6f8f6d41ba76c782384b19e4f72a1d8fcfd63436f6f57a18a50a97a0bc13f11cba34c42ccc705777fab448ca4f8741d82fa9b88fd16f3e3ba7b4ba5374318f9c4f6f33a919e0243e4b012fa6ee162699d7dc8ffb12d19ecffb892e89b7b242f5878d4e72017f300b13599e97938540a725befcac2d9d86e939a448acd0dc87ee66fc69fec16040f905286398820fcf82c5e861ffcc4e7e01ffe2a7e2eb45c475cb63724788aa676c022ed76b742dbbc2537f3a169fe409ee6c35011b5890353f2e1b097392fce4a52780745b406a72ac5651074de37c97d2aaa2970f89abe95e899a2731413981ed0ed455c27da737caa11f4807b3287136947f0dc28fb83220eda39fb862aaeccc78d29e911e45a3e30a1b872e9bd727ac0e1b884d7e1c33d694e9249581753920982b9d5160515631f108eabf026fa09f2de1971987e553315f4cb0b56834ebb892f789d0f189ee3939bd6e780ac56dbbe9567d30aeb8e08e371e6785e88ab6c38f93baae5219b8affb1ace0958c5aa90cc88083ea7488d5d0cd8ec39512629831597223ad3bddf9c35095d188e2ba97ec83762f27b306a22f48fc01110869964afb4fe16760ae322da220f8a9b6acaeffa7691c94f3c2c894de35729c8cbb262be345e521bb10716a721087927d9a4db310bd501576bbc5e3e1233855f3808ae4d499d172d82ebc185ca8e95e38b81f01a106c3d3d607c2f5141ce80a85cba110b6f4a2f347426da08c920b5605c256a323bbc71667fa06b64bfc52fe9758feeb0c0ab22194104a1cd0de13a81255b42f4dafee3cb5065a01c8c1a0d91acbc54d86f011cc90999454b7fe0997f71a27d921a44ae3bf3f515219b41d29e8aae5d46e71a539aa9752ed4b1f581234510c4a29b9746ee0663980f1c88851f0a57014ae6cf092a6c3c1a2f1316d54daa35035d18844d6b8b170f828303ecebcb8df71a22f349c2ffbbde37b29f0646f1db35dbdd15a4e26ed67c421b18b863de42ff970ab21a68705a7ddf081856374878c4980d4163be69631a9926d3920c288eb4a0bc89a8dacc475a39788a65145fd299ae9aaae1343f50b21d4b9842afe76b8b69f194ea51f6bff095c8e720e2f373b1f3604fb07241c0f0bd2f8667cfcf1f8a9758df87e9f53d3b2711ac5712aaef5a47321601491fd5fd2601d00e8d86fb5f74530d2e464d819f60258c1709f6aa446f8fabf4c4b1edb4d095d0c894ab50fc60cb4afe864fdd026ecf642a6feb5e93c49a1941e08875987a42846d3f309d78f3da38c67ea59e6e91bae25590aea06e3197f6883fab7bb203831984e1b6fefff803b939aeab23f9497efc94289c045230b6c92a2e324377f921278ce98d6584fdbf5f615ccb5cfa8e81053dd24037dac80d3ca40f9e4d204652156e61450097af811c4c0c948657d827cfd477fd6e5ae7be53a003ccc9088f64924d0dac8886ced345d4668ba11bf771215723fcc4f96d03a3f1aa74d00de2f1e82f7b30f9d87b0cf13404ce0153508aeb7acd4c4807a90d2a85672da5a23abaa3d68c0cbe67051fc7a92f009befa55e068599a8bb3fe1d4ced24f8ab6b82891499516d76cf8805888bea4a54fcc5a32ef65389f708543fcd42158bfce3364e8892e060d6858ce35c82b4b481554bb829f4727b9520e5d47593683786c0d138b6462fbec7e4856755bfb4bacbd32b491c2f6f0e044b3f248fb8a2bbe25ea69135ba942674c11f9fadc0fdd69c971d75e118eea28bd49175f55c53a66ff52f8a0ef5b04ccd04ab30beeeb466c80659b6e5d18402d04729ff89285c9fabc00ae31c2fac3af624d6d6abb09a223893e7c51f064db99119c548553a3eaac58b4307ce923c11aec7b2bdee7fc2d0b39c03b140639c45b044e4a78b2e3f17392755ba08dc98c3d48871c624237aed6ce4fd80d7594e8579d7564ae9abfefd19cfbd238d1b9328aef89f84ac81b8bf21dc7e2485d59486b109e59a35c6b6df34d6cf8b237217ee17a53449103b09fb28f76955efa480c22b10e19393921745a05893911b0049c0d772bbbe6e507a4439bb1192cdfaa124191a66993bd6233c4d35266ec0d57ac57230c69c431b6dadb03dfdf077d045499a6f9d80652d2cb4c7993975e1959708b3ff768daf85cd5cedcc6eee2288958f3524704746a8f3ac30e6cd13a089fd6835316b09ac2ac4920573eddd47aa118a304a46217fae68a09de64acc31081d41c8f2f4a61bdb8db210e7d8b7dc7575daf5b2a273bd52434d5d3b7a990e56124fabec10a8c6d666521f9e17688608cd46ba3aa2c2909c3c23f22eb4ab8914b16bd922d4cded65c11cdca17d23d1b0326007e9b8dfaa21d26b1d918ba5eefc90fc0a109d7892ec0e08dc26468aa7b206f5b2ee08209adc4db93fc571041077c77a91ff2b9cf8c65de5ef711727b954711398c9d39e200c7ba0446115e293c0a5c3d17895929a4d482eec3af63c378289ca8ae925f231cc9a3fb4640a9d43b9b69fa9bb059393babae1697b73bae93556747ba4e9ec5558b621d7d454f5750cdaedce0bbfaf754badb82f2f8bc465ad70919927584936ce7161944c019c8b8546fcbac2f3ddcf7826fde712a3d34a7a17db031aa70eaeb2b8709787677de6e6f82b2ebe7f5a1b661f70b0e590218e0bef6f46706d68ecf8595a1a12974e00577f6a6af83fc77118d9711039834cbba01e14c05e27509701754bd881cb8655ee7b5a1ca69fff732d56877040dea93fb70fa672cb0d57c13294852e50179febe84bb2c9007ee4e5edfcc4046e6e875e7c9495d06082c872015693302c48685074c488fe51eb3ea298ae5e476403f7d4c81094a9fa8dc7dee6720c965da993a18df3a957096c18342f71b517df6f160d6a005aba9fb8a439ade8388f431755823541eabb5fad7e4efe8432c65d6dc74fc9d4aa3bb6137b59e1f51d81986c0f5b083336e1d9286a663aecb9e5ea9add3408e70ec9c3106bc4443b85854b11db65d07d0908bd8c84122cdc19e5def4920fa6680c4cc817e590119308baaf7c032f5bab2d9a377ed77c47f4f1dc24b25be0c3caccf186049e50404b6017590bae95e8d1bd4ce14e9b61b3e3321a2008326457bd08dd3085a242f52ec604cb5fd2aee99dbd38f9b1eeff0ab06d9976ddad5620f51778b7a04c378416eabcc509cbd9b28479a167e9aec90eb71673084dbab96f00a5130d865e62ea710ae59ff52310362d8c1ee0c9b5a11e20796bb9921d02822b2720fd327127202d8da24d38473ac206f45025460545cd71f6f00717ec6672a35c90682884f1ecc2fe1cb8a479258a83ded0817357ebfb9e9c14f3f4253ad7604ed81fb95537c80c3916bb06f5d4466a19f773bd9500794fbfeeab2de8472f976390c66783746a707f07b2d32aabdb1dc3f9b289de035bc5d4692f79a804a47c3a9fe551210f8b567c7dc2caace8602d6c4a7e70f99a20cccfa59d98145571d0812e99f6965cbf42bd08e05e747abc339f9aec039c309ba045fce4e0383944139267253ff27f84f7bbe1fe7189833636737143693e35cb22e18dd1cc5d4118d6858b1e7fecfe5b042a0cebdaea49a8cbb2f5fa15b949ef0c28fe69b5868f7571d06d0b8884ecb42dd669dbb991af41877468d6560974a7d44341a791dda84c46d006f265aca7de474be02e63032015b23b3bd3934ffd3d37aef03672fb302add14aa2d1f3288bd96e9b4688665228b7703b370bb65c3bd88fe928bdf773321278d020dbd55fb94fbd2665d94d476c3f838e8ef5209cfedea4149570ad8dda36495f634099a5bf3a74072f018ff2cd3080254820e714d8dbf8bda6405301c35a16f8cd32d62e79d00f05550955fac8e6477635ebef1b2b415b58144c355b323f35797d7ae7fcacd7bd6015cf32cc565c1c4b7a6ca8d3e4816e206b5cedadd02abe5c39ab39d99011ceb8708771446144c2a24fcf5c9393e6e32b305a651f93a3c2cd686315926c03f31bae35121f641fac373d1f7ec0ad73c78c50a553587cb53cb65e84dc7d90a2892226b9a04d6bd160b78af1d6fa8c218fa9e73caaf4bd6d816b98085958f448196c5745803c6a02e3cf2e92393ef716cca4efa0efe21a2b862977b2da885b853307e8bbb1292be25896e26feaa6805f8ff0180833b2559c2dd839ff964bde59f496a3ddfae681e77279faa3cd9fd19d87f3f3167330339a922a9ab8a3059a76f29dc375992e9b50dcd7f8f9ce99d07ed63d7a0364568054adb096805cafdc288553c0685570c3fc8d9edb27e77195940532a45c3c6476e4b6cf08a2bfdeef9a8e53f30d93d436a0e8a5c4daef60753781aaf8ac98541cfeee8102f4fa67ac9e889806d9d9247e88be5c73a7007eaf4201108de77f66293772e92d3d8d8dd709f9bb902dddb72e7dd840784e124cd8fe11bdcc2c88433d38e5d275239eb39393cc4b2588ffc536f6d5c15cb2aac592428488ce912a26f8d85c1173eba95ccc4a03aab08d6a7fa7f836e88c901643589da92582b08704b32c00cc1e21bac4500b5b49abc0eee2be1786d2a53ffd3eed743a72b630f93c21ecdcda873312492c29a21c1ca0963eedd65ccbde4d81b25946c70ec798ee4d4def9fbf248f8de809bb8a48e2a8caf8ef69b766adb85661e14685296a0a3090c2618f69fb5cc67f803590bb157ad5cb89e6d4ba5538176533870086e612dd9c2825538256cf839d507efca8b92e48b24fd6066af10896b8d2ba075b6171b7c812ef8a1c54cecaf25024046a1c94cb02d7a35dbae8eb62df9148b1b923e5143608b0058413a61dd5a10047c81a275d4e1408bb488d9a42fedae2d305800097e18bba8f7a64bfde281371d554b896e5f3cc1d7ddbc20f35a3b9ef5af2e1bedb2a08857046644aada1cb1cbf4ed9515df88535d742ac30e13b89c2e7c9b242f691bc038d420f37788939358e3e03d55c1ee4000ac639ebbb7b3eb1305e4e8f00d30bba9ebecc0e6eb99389d78caf0bb8430f6c86feabde7b72a570f344f2a511d7aaf1ba03f88ad83c13b25348f8ed3ed084cf70d0182cdacd92677e57edc66a093af57b245fe97f9341ef567c04f5e03ab29b9281a2d9bacddeeb7a0836ddcb9b4a424f74b723b52ff40c6a2f2a5cc97d2f72d79d41f63e718fb38998301982df4e1ecfa43b17289276ff0d9c87569a565aeecd21f11da3b438ac063fcf76c9a330de545ecc3be0b4c038eacd5b84feaf26c41b26200dc47b4188ee2a8a7a8d3a27c1454be9baddff0f81aa6a96015a9832d6ab2dc5f5dd88692ee495bae4f47091bb41d808a433f6cfcbbc41db0aca56fbaec4a19630d36363357cd59931ab95a1fd1a7301527616cc964178de9e590deecb1f4227f3330766bc88b06a2dcb547fa885bcf5254acf748f3b7e4f8444da69a7e333ce6de66b98944d0d521c85ceb4051a4aaabb5ffda00beacfda7d3d9f38ed5757af7bd14e5fde0502e0eb210a2337cb45f2e95d2e4e34a1ecc1e6c068a11272948fc7dc5282a30c19287ed983fb0bdce8156e45ae538617ad7d9885f78b0ba1cc2803018eb9453a3987b37f7e142affd6330e21f1fde4b5526246de886a5a466934aed542848ffa9cffe01ffe0b0de334482d5e1d0e257740e96ae6268ca0133b6c99be5361a882e54419dee57351347e1b2ce187ad9f52750e07ee4a6a35fd75ce8cbc8df482281aa034e33fe98a5b29398d493a372f8b875a02f493c92a66ffe043d744d62a2b5b3e309ee6bfb1551c1a0f26e84c83b4fd24b2da2607fce049eed656088a6f14dfac1195e10e51b17e638317960d804a1029916cd344a5e933acce53377cd0bb22cd483b7de5ccb73adf7b53c09495e3af14765d412c7a312ae652bd54a873fa6fafbb3ae694464dc53a08e8b64fa0f9dddd89b8990b654025621a73e3c45f62d87b5c0a730f10a0c883e8cb2192949db1a56a1dc3151fbf59a7e1b2899715e151ff4470cfeff3a73a58a9190456c8370b0ba00cceaab817c27c0b9c3ef3ff415f3db1a97777fea05949f2d0258a6a41c59f715fd7cbc985c0793bd61b646a60d2f9e72a5657ea6fa97b494392d087726182aef0efec302aaf96b1323d2a32b4910b0f69bd5987646af2c4aedf345351b83cc855254ce8b7e3756a202c23744d1cdb0c5d8b9dee2ce3d9728131b822aa1b734540589c6245887a811db75c1718ba8dc4061e4b1fbebf2a4a76b003cef09fc593e45eb89843ac98ce95d2e6891f526d3fe7342452bf3ee322b4c95eec4024c92e7efcbdae84eef8e9cd6acb0640c5cc4dcd8f5261d2f8325e6fab331a0d22b6b75e863b9003bfe2f4e8e2dc5e743c2f2a95f48f8a07b6047b80393672557ca3edc95eadc140a8b3b86edc704e9cd10ed1755c0277ac1a5f59f1c4423cd4992f57eaae8970a451c175640bece43709ac1ed38308590980643b64e62e77553963d12333a5d49da9ba767084b4e67bbe4643b7b857c158f61f55681d58727594ec5d1ae8fef8b5eba040c39669af8237c0ffcf5f04ba249a635d05cd38d801e5e4e7241402c63ebb1ef4c0fa2efa8dbc3275d4252a1d471cc938fde50506ee88f294243f1409ef286c75b89417652622a7872a0a52f96dbb5001ef19f5fe8bc9ab1a667865765d97d0d53eb174ff6be83f36dcd69f9cc95fc207f37dba7dc09ba37d7b987990ec103b09482bd59f9958f6e93af84678bc06bbc17be1f4f6a37989047788e28388e732c342506b997605203965942e79d3baf9853a70412a446550c23c9f67bbf55e75389650d4360852c8d560bf60a52c2436310f3f85b3459e7a2f3d48856da36fc0412445053b3aabdec6832c16b4d521e8b39071e77204162b452b71054fe65332f2880bbebcd151a4ac3f81889b104fca1e0c3681552e058049bd2a5a7207ceaec441b9c0e4b26118d5e81b583963349daa5471509e8754557f70ada82000df6a01ef37dccbf3136a5c32858e8774cf9f99f7ff7d090e92fb5397754a7271bc9bebe6011e8263b0314ef26e25eeac1cc9bd4e08302f3bc22027161c3fe729e70e65f4b918c05b08c0780a93cade0266881ef1ad4df9351db509fa275d1c928d5e75db16b4da1941579251a6836b758cb90710ff7a287474db1f068a6bd5ee35555486db401ebfe2d75ee48834f6daf79663ad2805afb7132cdff4672af2f146bcbb9aeec8bd8322f5afab421a683afbd36e087aa1b47c5484e1f05a7b2a0a9212f6419cb7f3505a87a7f6ee01ed9dd5aae9b4d999631fa69bacbca6ae058887015f07d22da51dbca24607c608080f964df23bc84742e930fa0c31dec612b33f1affea3c0f665e344f9af3b40feffdace25132a111d071c6029b49f7493bf78a96cfd746436e8a676f5b01ed8ab6bb70d0512b79e1124d697ae03d7a4bf7336faccde58d5be7e4f0435fb576d7617645adba63bb864ccbcb76df43c17b8ee35ee213431d3d453d4442f801727e13dd975178113b8a1a28a2da43bc55d00afc0ee85638ca1dafa56c37e16303cfe23e16c95ff36be0ef9fef916c802ac07f5a14e35064902bdb98afbf492e4ff6e70e837377b1715df7dc9bbec6bda0c550664a1b35a448976d84b0eed7c520c11f68744a479126b3933021472186a437e5bc784fa8bb670bfb37a21e652868ffe7779beef541b426251b6e8fdf2ee81349e9207ac09a3a13779fb2562023caf2a74d5a9c5237f0ff2af0337e389ab94da3950eb8ed6b1ed8154015386d2db03a022f7deffc886cffcefcc7b292f18ff3aa99630cb344e8578bab233874cea25cedccf4322caa0294481f21b0dacaaf1e85028fbaae29245a4c22f010ecbc7eaf076248eb310635ac8dcc55b0e5aa4db7bae49ac2b2dfc3ecf04b54dafc548789ccb81838bf6eae3f1fc0bde44fb75dd3f8c405dbb6f2f20b2bf5831b01ba7671e79dabcd160729ce04fb1ac2fe9eee26e43a63c575966f3586890a9142154dcb5fc1f7bf3d518c3fe794e2ae568dd5b107f0c4fabb8368ea0c1eeb0a196d5d7831931328f7644784e2c832a386cfcf63f85c74852b8998834b5ebafde4b1bf6f56c15d687c8e20b75b4a474da9ff4181756688af0a771813e472066fe27a6611eb1693bce10b660af4015c102cd84c813e8c71f353aa0f75b4a261565ea258283738ce36415af072bcdfd0f493e160569d0440d3dd409c2dcb02dfca51612f0da02efe5d592a533532001f97ba0e6243a88fe131941bf8c3b46b4823cceadaf3e8c27bf97acd568aa638939b4230261db78902174dd37ce554c1a5de88156e62b559d7b6381b5c2005a6c3f26907d4d101a2169fb176679cd7500d4a30001cc73bf3f03acbd3f58a8b4cf98db8edac63579835ac68c3e2338079da6f39ce905a6df87731e3c7692ff900e46935c7f23e3c5c0b3598f9fb6734d4ff3bf1b06fc409f7f8539b7ff6766f27080a8a6c6def071c6721b25e9dca01c3630f3ff10ff90ac329edc54f53c2e7a1daf1d4f9cad8ea17c08b3da6fd8c24c3b9040cb4eaa877218c940590ccecf01b602b9b9d425e3aae81f86110a716a22301fb8d31a17f7eb6cbb22500f3d089221f76d96e037b3a401e66445a036a5944e161705fb9c63823a87b418c141256a30b3c1cef117c94e895ae3384f64d872e01a0c9de39384cecfb0dd070729453f27ef95a478d55f01ee2430b177999111938d504c50a0b01e4175a6834fc10d148722df090cb114388edbdf7de97d519e890dedaf19621dddf996fd6d47e8f6b610890b7c1334fe7d0be0861bdce5cf6616d5e95c470509d37b626d26b7f3b6db1f698e1d24e5705a87e4339b9302370b79a6402c23f0fa2e9a01aaeb073704447ced67696ccdbcf4c19c6acdd657fb14ae031216d6b1dde700f643ed102138e796838e532abcf3b1beff818a89e7c7d9c903a969d34d0a4139709938efa390199f44f4cee8e1a2d91f3a1b6c444fca698e52f56aa0acc53ec4b7137be2d61515a6f556101cedb2cff32e8aea5503027344fd33107f460174c28c837a6ef367245e6f36e16c1992e3fda67507a57ffe9a97411b55daa2f639a7c3a88bd0b4b2f8c4f5e89ff1a7d0e22bc4b65e6186eecffffb28cd0db01397a0309ee0b2d03caf30b9d7dc5d6c83ddb48c586c77f9b0db113d9533066afaadc05056cef6c9445aa1754dfe2b3e650363518c45a864538c86bf2e5ffde540bb18aec4f384884695e176cf2cc86ead6bfeb512fc6d09d339ea891de3c364a91ba8d65899b9345c9e39ab5c46c388052c743ab14f4a901f102d5ee30936b6dd5b56b7e4074ca4591e72455419fa1a967ba58c3d2846267d09c705575fe9983ef8e22596369871811e242a4bb7ee79ea039978e441d954cc082f2aa3c650240bedd3d8ec108db104e314037906e1c89ddf01cd69c316889f26d4502730eaa20bfdd8999ba9909096860f6094b608ffed1fea466d9be814f6177f874d1ad5996c26f3d599d7ccbcf828c8556b6676bed56989f650dfa563dc471336357bf0f4753418bdb2bce001973b73d8108b832d17bd7192cf50aa92801a9f0e33c8c1b4704de6f7fa9c315b8d726caca8270e0127a8c0eb8d3a6c691bbc6babed7a8b64cfd7c0f10d7ee4c0251729492ae920b31c0b92fe13d0c59a8d8bd2e6066077acbcd7e7468eb6f4d31e7bf48b63e308366ba4bdd2c8088346b1d13a4a1f0733e00d28ad92ed945a56bd61c634f79f894b0aad1ee22cc6a8bd5ce9de55e0f8b461aa7201ab5368e61a5797a537d99693799cda9a784c753a71dbe29589f7e9f0bcb4ecac8cccbd4a1dc8da7b3aaef3a0f23cc3af5c6528e3c1347cb9d4d9d4c1515225c46a96af3868a6dc30db284931a38af4bd004449a9725a34b55947ca8656a92144fc6557b5c2ddbddb287a6aff7719c2bb14373d1441a45fc05728ddf091ef9237ffc4e379ff69a5481b5c4fe6a8f6499d2cb972975645dafdfa7a1fc23151184ef903eef38f9b337255a3931fa4a35be97392b35d56c6539a9fcabd419939eb7f0f0f5284bd7f975f6a6eec6b6f3ede48a3d6f40e643c349c4c04f3be79c3197c3c557e09701d96e1ae99ea2bee5bdfcf4f7dd7d3bf9fc3ce3fef5de2a913d6d58cdb6070e29156274e853b178e7ccb2def6a5fc5777d7edf61741ad8f531fdd6a0c0770b7a1dca671c2e685abc3809bb539dc26d4590e6d540daf332358e10188f76da2603f112a039fee1fa1dd6fc20b2814a30ac113d2c8b19df4a09e7adae3a116d504ece0a37c369c28e583e6fa67c6cd7a34420cb8ab08bdd66477c8732b01ea9f0dacaa323db739ab581901b9cb9e740518e3080a4d5f40f957029e1cc5bba52876223794e0f80a29e92955325234523462e71519bb28ba85f855cdd16d3b10fd34a9681bf5e13d71e38f7c248d6606a76ec60e01e7571bbf1621f087fad597aa6979adf19492179454f7933679d5f4e23a18d35b636435182ef798cc0cca82f3eda6cbced9d4a956ddb72bbd95a8e4c3a1c3a17c0a858efe86508a56218482c434d26e43b8bca1e88c88eef25862974756fa19f801295e08158e5ab64b1965f8c34240387267013abdb0da3106d0b354e29f6d4920da397db5f41e633504eafed84bdb435550e8ec776210c9c7e9e9189a4ec642a621cfacf71a8b55ffad8b1e4aa40dcf1f2c8a6523f6bc47391b42b6b6f0e1a2c9a877e675acd6046dadabf80dbff96f21544ec6097e28a731ca7743564b9cbe4e5a6400629408dfad143814206529678c9bf9e8ca2a5ed9121dc30ed5f7b7a22554b0dc94263db2f9c211cab04a74ad207e8d3db5dc6093101c3ab697b873f8e8be61ab428a6989ac8ddcae525526a07626d9223134b5dd2ba5d6e21689d6a89b078df4b01da99798722b5e7c9a44a06217ecdfc41f4ceee673df3b2b8e59b2557645e146dc41ab1acf59761ba1a9241910566f7982f4c945e73a1d2011f71915a5ca47131832d13c3da9cdebb76558d93903259b84abb0284656971c44e0110eaaef3223eb9ebbdf982e86af0655fa0398831173ce2eb802000082acb3e0c1cbbd8ccc3875682306f60d7d278531dd3dff438c01f044c0db2363d0ad5b5ac89567e77a7af082131ae343eaee0b5cfc17dfc7de2f385265332ec4b71ffa0ed7812b234b63ca872ae85aefb413297d5463998d8e3d55d8c96d584f4437872528df58da83fc154d79b33217b7ff0d493ceac0a573a75b4dd4b4c0c42a0e32d5b78696f2abdc77e55475ed27f36c60f806595f80d85396e72ce2d0997af6b12fb719f006474e8a60b4aa89ba97c94d97758f14b2c0811fdd99b3123526e5e5cfc16df287c2328600e3772e07c70cf4054a919f2932fec93dc100e0b12a9c50645e1f3713f86f372f82b71e3b8712b4b9d25d105bfc361d833d2929656de87c3c0c9f4f54571c621a426ae6f3fe276b00c3780363c26b464e6d67f091aa8bda93b0e3ac8ccafd6fa25dc6186afea4ce73dcf85d114e40b5e782507bc17db12b4fe84774b7927dfcec010a91f17f9ed7cfe205e1388351e3f4a7ec0aec7a9cc6e6a71a5a4adaddc045ae6c402cc60b61a7c2c953b99cf6ffb8290f2314b09549febcdec8c9c959d6316b900e0c5d2f588b83467a87abc012aa2f2c8bbb5df098a70924082398d3ac31c1d3ec99a7c65df11a703b0ec3496937b023fe14044489dc90975c303725d7247d2e26bdfa8bfd503f0dcbf6a6423ad804ed6bc4ca0483d5ba5b38c4aea769134e2552b7398d0d9af64b999d30fe4ac254147a8cf5339a5a7b55578d67479bb5ace112b041cc230f3fb083a370980b16af15dcbf4ce90b88f02e3a12ad95317a04570fa3d3cc581cbb120d34c2cbaedb2d2676d6e3552cc6141eff27b209d5ccec6e62be2b9e022c1b6e8865c600dc76b543f003071fd1089d9a506ef1f69922496f290dc8fdb2e75550d1874cf8439ecc97b42cea443f20307fcbfdb402024e301cb5f77b7ccaa9b0c016d581281a47844a6eaba754c61b79222813ee8e3aa9a28ee4e5b527c2dc6170ea4306306b042032bac6511687f1cd692c29e988e6697f75f9eeecae14c40c30fb59b967a42b892ba2b4a8e78a72134adedc2b52ec6abcc30f7ca9daf4c3436fbce8ee4458a63cee986a60c945343dbf87841ab14ceaea11c79a9ebc4e6530ca1fb4c586099bfc94338883c6576da5e170f76d868607e84e422d23cbeaad9f57830204f8af94134378f3115c61ff5dfa889e9f0c3f711bf3ff961b80633a1f1cdb8aec43f5c930ad8a71671370e641262f78a2a38b7f18f5cc5edd84d95535f333cf75d9b93ae9b64e69ee208e7a2bc6f33560fd01561a17a0f662f37233b34a093912f8f77d0aaa7a2ed81e7ecbba90fe47c2aef061a197837eff9994fa9b6f8b7b936a4813b55c6a4c11071bdbd0941dbc6892c4eedd55d0813a75fccd27564679e982eb904e634d04087e4a84a092dc80f97c1388cfc02619682648c72f99bb50fdbfa05928283579cde7cd99f91da48e98918e115c57e04bddefd87fb3e75587cc6411ce675d790207e6344a73a0ab7a37f0b19d7949f5c7c295a5cb8082dfe120e68474dba0f55ecc060da63a3d1fd9f7949b251235dc64cbc8cf8c82956e487f77f643c492efd6552c53fd075e4d3999debca009fc28f</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">The blog is private</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> ME </category>
+          
+          <category> PRIVATE </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> private </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>沈翊</title>
+      <link href="/2025/02/07/odnwo/ME/PRIVATE/%E6%B2%88%E7%BF%8A/"/>
+      <url>/2025/02/07/odnwo/ME/PRIVATE/%E6%B2%88%E7%BF%8A/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="wrong password" data-whm="wrong check result">  <script id="hbeData" type="hbeData" data-hmacdigest="5d7f8f62e00f73b69f5dc1430ec6bf8480ca3b8701d98557c47d7c6b72ae59a9">1c4f476f3e7125f5cf24ac6b2eb457936d649b4d9da5204981a971041ff25a851236707f5ca517153abf348fb9b1aa3f1709146e30e72911c5820c626eaa8a3cbcc59b0a1f307187d8a9a5d30f4c788b45f7926c7d4ad71634dc18ca36cc4290aec32d8878d12b907a28e7648315264054efc2b58ceccbcc9568cffde6ad537765c4f8da45cb7ccbcf9e4243d129b5ad8b2c5c16f93439ea0c425cbb7694cbdbc353cf94478e70c78795f0e1a77530abee9da1e6cba0ffe1a1fa5ffa62fcfab8e93c58f3a2fb25ad3865c2555d48c0a7129703998940d068afb9269c4247885b436555ab9e6b9de3a1a9d11dd82d021f5e99ed255c99a71b9591bec2d2923d7f84f3d73cefb81ed05f2e11366b5e10b517b699d944b05ed14751d9cb19ce73e5470994bd61bb5383da32cd2eadedb0ade30ba6f5ce7442a7ad0e1cefcf969ede831a8eded339b9cfa2d1889c05f7faa83133c7a4ceec4e535ecf9d6d191866bcf6b4dcbb802191f80cdaf740df1c7d94eeb8a2b8b44f09c294d4ede509cf15ed7383d8ecde950c2fd9b8d5ddaa6129dc482c7fe44c6cc7664fcc0fe466b0c031cd0463739c2ebaa3e6d5d845bebf3d5414b8476505fff16e4e32a68b59257b5e0d517ebdf6bf196d6b4d1f34d6f4e687a04537224445103eab14e321bd4ceb639a69557aec054d2ecb5407412e2e1c48</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">The blog is private</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> ME </category>
+          
+          <category> PRIVATE </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> private </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>lifepath</title>
+      <link href="/2025/02/07/odnwo/ME/PRIVATE/lifepath/"/>
+      <url>/2025/02/07/odnwo/ME/PRIVATE/lifepath/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="wrong password" data-whm="wrong check result">  <script id="hbeData" type="hbeData" data-hmacdigest="8e0e1c6e8209056bb261fb5910ad0c2e0d24b02587c56455ae37cddb1658dd2f">1c4f476f3e7125f5cf24ac6b2eb4579305e3b16948ffe5cc6205c2b1ac9d07c488e926ed34677e3d1134b4d182bae2196fcc41d86977258013d21fb6076dcbf0878062044c1827fab774fffd5322b7280ea0fa24637d2ed68093e928688f5c9d715f61ec822b1cb71a2b2db503bbca6ebe92331cfd047fe0e8b8d12ca2858cb6b1717722522436ae6c2ea3b97ec630bc88f275348eb658d53bec64a1115ed876b89ee494e0ca54b627a303b518390a50bef683d2b4e45a19a64f724cffcbc02c1c334866600cbd6fb4ca7f3b52db04b7e5e8e5141b1bee7db2198c8503510b70e95145310ce610ea682304480b75a55794ca93fda993d469c31a6a8b69ebeaec28519bda8311b273433c27da771e0e06bf76cfc5a3d6081ccde23d1f420115b9ca0fe271c593a54782f385783f4fea3ab21ead96b8b994009b50fe67d52cd838c29f781dd76d3c8f8a8522964e77178b1a23e57c1fbbaece15f39b9706dc14ae8d2a1bd13a5c4beda1a77e5563909e2c99d6556dffa58c2430543e341b669a5f34b99830914564f3d6a27c4515359e323ad5f59e7d80433c931740f75973f088e60839cccd928be68f6b705299a9dd3f4b28f2347e2263a9ae218afbd07056595a4c3a33a3dff102dc321724f4fda9bd67a638ce7b3cca7192a72dd7e87e866d625911b0c8364d57c4682556a3fa0ccdd546e074c412ec5cac3d7497dac672cf8b88793a2d0a3d97e1130bcc1962e8afc6d9a2eedbe42f8b037724d72ee8a45f7dc76a828378cb71ad9324d78221c88f12fc6a6b5c7e405f5951881df99c466fa6c32c972245aaf15e0ab963a0b75edf1ffc22a0fd966e3b4ff75c492991e8393b2df94e1fd0c5add61cb2f60284da236b10e629b6c4cf64d397677fa847cc4daf3261df7458f1b383add04b99237593c9c478b34191512031d1e8a61b0d882cc242a0644857b29bfef04e89aaff98fe9b828c56f282c0087d58d3474f9d584b80c07a72f9a9bb6ece4df684a5c3175ccdfa9a076fb71a7a5afb3d15d7364d0add2ba2bfe968a00f9bb8672077b54525d7b306c5f9600233817434be1301c87d1fbe917ce61ab2b186c8e202ee1b4b5fb2047dfa8fa3f7dfa27724d80311ccee</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">The blog is private</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> ME </category>
+          
+          <category> PRIVATE </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> private </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>朝夕</title>
+      <link href="/2025/02/07/odnwo/Entertainment/%E6%9C%9D%E5%A4%95%20-%20%E6%AA%80%E5%81%A5%E6%AC%A1/"/>
+      <url>/2025/02/07/odnwo/Entertainment/%E6%9C%9D%E5%A4%95%20-%20%E6%AA%80%E5%81%A5%E6%AC%A1/</url>
+      
+        <content type="html"><![CDATA[<p>朝夕<br>檀健次</p><p>千万个朝夕从何说起<br>描摹一笔山前雨天外星<br>一点一滴勾勒出昨日今夕<br>和眉眼如画的你共同写意</p><p>漫过山峰的雨雾津津<br>似是看不厌走不倦的曾经<br>这一路千里共繁星 我共你走下去<br>百年与共一朝一夕</p><p>如同 云低时天下雨 你低唱的时候我动了心<br>从此 耳畔一更星三更雨 千万种声音中听见你<br>千万种声音都枯寂 听见你独白句<br>说我很想很想你<br>如读懂一幅画外音 读懂你的悲喜<br>一遍遍日久生情<br>千万场人声鼎沸里 听出你的声音<br>说我很想很想你<br>情缠绵千万个朝夕 吻犹如倾城雨<br>轻落在梦外梦里 此生有你</p><p>如同 云低时天下雨 你低唱的时候我动了心<br>从此 耳畔一更星三更雨 千万种声音中听见你<br>千万种声音都枯寂 听见你独白句<br>说我很想很想你<br>如读懂一幅画外音 读懂你的悲喜<br>一遍遍日久生情</p><p>千万场人声鼎沸里 听出你的声音<br>说我很想很想你<br>爱是在千万个朝夕 你轻唤我名字<br>我第一千零一次作出回应</p><p>千万种声音都枯寂 听见你独白句<br>说我很想很想你<br>像看懂一首曲中意 看懂你眼角情<br>一遍遍历久弥新<br>千万场人声鼎沸里 听出你的声音<br>说我很想很想你<br>漫山遍野有满天星 我满世界是你<br>慢慢地和你共度 一朝一夕</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> Entertainment </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>繁花落岸</title>
+      <link href="/2025/02/07/odnwo/Entertainment/%E7%B9%81%E8%8A%B1%E8%90%BD%E5%B2%B8/"/>
+      <url>/2025/02/07/odnwo/Entertainment/%E7%B9%81%E8%8A%B1%E8%90%BD%E5%B2%B8/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/../../../images_pasted/%E7%B9%81%E8%8A%B1%E8%90%BD%E5%B2%B8.md/image.png" alt="alt text"></p><p>樹梢有葉不捨摘<br>情語有愧不願白<br>你看我眼睛<br>深邃的未來<br>手心密語留你猜<br>留念深夜裡輾轉<br>記憶清晨里煥然<br>忽而十餘載<br>你我再聚此海<br>翻越山脈人脈<br>只為聽見你跳動的心脈<br>你我似繁花流水<br>似塵埃落歸<br>情深一吻做點綴<br>願此生不再舉杯送誰<br>景好人美<br>指教餘生做結尾<br>你我在喧囂走散<br>在漂泊牽絆<br>千辛才重回美滿<br>大雨撒碎成鑽<br>落地匯湖畔<br>從此今生一條船<br>唯你我岸<br>樹梢有葉不捨摘<br>情語有愧不願白<br>你看我眼睛<br>深邃的未來<br>手心密語留你猜<br>留念深夜裡輾轉<br>記憶清晨里煥然<br>忽而十餘載<br>你我再聚此海<br>翻越山脈人脈<br>只為聽見你跳動的心脈<br>你我似繁花流水<br>似塵埃落歸<br>情深一吻做點綴<br>願此生不再舉杯送誰<br>景好人美<br>指教餘生做結尾<br>你我在喧囂走散<br>在漂泊牽絆<br>千辛才重回美滿<br>大雨撒碎成鑽<br>落地匯湖畔<br>從此今生一條船<br>唯你我岸<br>來年接袂成帷的街道<br>平淡中的美好<br>彼此囅然而笑<br>叩首圓緣敬天賜良宵<br>你我似繁花流水<br>似塵埃落歸<br>情深一吻做點綴<br>願此生不再舉杯送誰<br>景好人美<br>指教餘生做結尾<br>你我登蜃樓遠看<br>曾經的遺憾<br>日出到來全消散<br>驚覺一生所愛<br>其實很簡單<br>只為你我一條船<br>四海為岸</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> Entertainment </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>寻</title>
+      <link href="/2025/02/07/odnwo/Entertainment/%E5%AF%BB%20-%20%E5%BC%A0%E7%A3%8A/"/>
+      <url>/2025/02/07/odnwo/Entertainment/%E5%AF%BB%20-%20%E5%BC%A0%E7%A3%8A/</url>
+      
+        <content type="html"><![CDATA[<p>寻<br>张磊</p><p>尋一處小橋流水寧靜故鄉<br>讓那些疲憊的夢可以安放<br>不去想那些世俗人來人往<br>就這樣數著落葉來日方長<br>尋一件平淡無奇舒適衣裳<br>來換下越積越厚沉重的妝<br>看得到走街過巷他人眼光<br>看不到自己背上多少的傷<br>世上的路被詩人寫作山高水深<br>世上的人被追問想要怎樣一生<br>未免過分要每人都能擁有慧根<br>要麼愚笨 要麼轉身<br>黑色的夜在區分誰比誰更認真<br>黑色的眼太單純霓虹燈中圍困<br>只是停頓了一瞬很多便不可能<br>一點悔恨 一點深沉<br>尋一碗欣喜往事熬成的湯<br>來溫暖空空蕩蕩滿腹愁腸<br>撞過了年輕氣盛無數南牆<br>才發覺勇敢不敵時間一晃<br>尋一扇有人等候敞開的窗<br>結束那無休止的獨自流浪<br>曾嚮往天涯海角看看遠方<br>到最後心比世界更加空曠<br>世上的路被詩人寫作山高水深<br>世上的人被追問想要怎樣一生<br>未免過分要每人都能擁有慧根<br>要麼愚笨 要麼轉身<br>黑色的夜在區分誰比誰更認真<br>黑色的眼太單純霓虹燈中圍困<br>只是停頓了一瞬很多便不可能<br>一點悔恨 一點深沉<br>尋一把未曆滄桑的土壤<br>讓愛能夠繼續生長</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> Entertainment </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>剧</title>
+      <link href="/2025/02/07/odnwo/Entertainment/%E5%89%A7/"/>
+      <url>/2025/02/07/odnwo/Entertainment/%E5%89%A7/</url>
+      
+        <content type="html"><![CDATA[<p>人间烟火花小厨<br>猎罪图鉴</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> odnwo </category>
+          
+          <category> Entertainment </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>随记</title>
+      <link href="/2025/02/07/Life/%E9%9A%8F%E8%AE%B0/%E9%9A%8F%E8%AE%B0/"/>
+      <url>/2025/02/07/Life/%E9%9A%8F%E8%AE%B0/%E9%9A%8F%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Life </category>
+          
+          <category> 随记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>希望，永远都在</title>
+      <link href="/2025/02/07/Life/Reading/%E5%B8%8C%E6%9C%9B%E6%B0%B8%E8%BF%9C%E9%83%BD%E5%9C%A8/"/>
+      <url>/2025/02/07/Life/Reading/%E5%B8%8C%E6%9C%9B%E6%B0%B8%E8%BF%9C%E9%83%BD%E5%9C%A8/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Life </category>
+          
+          <category> Reading </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>希望，永远都在</title>
+      <link href="/2025/02/07/Life/Reading/%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5%E7%9A%84%E5%82%BB%E7%93%9C/"/>
+      <url>/2025/02/07/Life/Reading/%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5%E7%9A%84%E5%82%BB%E7%93%9C/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Life </category>
+          
+          <category> Reading </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>台湾签证</title>
+      <link href="/2025/02/07/Life/Trip/%E5%8F%B0%E6%B9%BE%E7%AD%BE%E8%AF%81/"/>
+      <url>/2025/02/07/Life/Trip/%E5%8F%B0%E6%B9%BE%E7%AD%BE%E8%AF%81/</url>
+      
+        <content type="html"><![CDATA[<p>还没有办，有点小麻烦。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Life </category>
+          
+          <category> Trip </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>量化交易</title>
+      <link href="/2025/02/07/Invest/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/"/>
+      <url>/2025/02/07/Invest/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="wrong password" data-whm="wrong check result">  <script id="hbeData" type="hbeData" data-hmacdigest="82c7e1756e92deb7f51b0b26355f6803b633b912b0f258151bee1775fad2409a">1c4f476f3e7125f5cf24ac6b2eb45793c2810bbd0529d7a6b0a585ea1805f325789dcf97df5fd4bfa53fbfa50ac501bb8846e25a974de763f3e1e6b7a296576f3852e98cf8703128e676c5897c85749ed35c6e5d2d5d010da40e687ea30bb9dae7c873a1b161972d303a5d866807d21c77067c462de13c7ee943963d7b9f204f1f0d463b383fce445c98d5fb219e8257640d111ef17d98a19c7cd49473756fa38d84ad47e80b90552e21732e5cf5a24de455cd9213c25b645082ee67bd604d52d57607b8decd072c4de19016da25976a8fa3dc8bc3e1d3c52d45454907e6063d18f546d9aab62fbd64b30f045e539fff598623ae579791c0fcf1793138b99868e342129c7448cddd02f74c5846f5df79e2e3a3b0199b8d904e91e1cfe3eb6a6e7a4f7b586d39aa5d2b3d985db9e80c9b657a94f2107fc9fbaea4bb80228a80ffef8ad3b62905cb1516de2134ac2f72ac16259bce5c4c24744f07e455cc680755a586a953f37340d7c8a22d9b38c4b426c8e435aabc13fc63ec8c65ada6f8bbe59c0d265e61285e484bd995be71aa7e94b16748e7b92d83a6ca8810746db1746d39ed3b6953dfc89701c3cbc25a8dffd0360cec8f1830a46a0c1d313c0801d90931213b85ae2c900878e561d29e3bed84eccefc8d922670f76bac12936f0cf4427e06994d87950cc6a4621c14645a8c238e9a20b8289d1fe655f059c73fb25ff17f12cd325561b65ae0274fc0a999ca3b</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">The blog is private</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> Invest </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> private </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大国大城</title>
+      <link href="/2025/02/07/Life/Reading/%E5%A4%A7%E5%9B%BD%E5%A4%A7%E5%9F%8E/"/>
+      <url>/2025/02/07/Life/Reading/%E5%A4%A7%E5%9B%BD%E5%A4%A7%E5%9F%8E/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Life </category>
+          
+          <category> Reading </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>leetcode schedule</title>
+      <link href="/2025/01/13/work/Leetcode/schedule/"/>
+      <url>/2025/01/13/work/Leetcode/schedule/</url>
+      
+        <content type="html"><![CDATA[<p>看看时间对不对，自定义时间是2025-01-13 10:30:00<br>可以，是生效的，非常满意</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> Leetcode </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>virtio</title>
       <link href="/2024/05/30/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/QUMU/virtio/"/>
       <url>/2024/05/30/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/QUMU/virtio/</url>
@@ -71,52 +573,12 @@
     
     
     <entry>
-      <title>vscode_markdown_paste_config</title>
-      <link href="/2024/04/01/odnwo/Tools/vscode_markdown_paste_config/"/>
-      <url>/2024/04/01/odnwo/Tools/vscode_markdown_paste_config/</url>
-      
-        <content type="html"><![CDATA[<p>editor.experimental.pasteActions.enabled<br>markdown.experimental.copyFiles.destination</p><p>**&#x2F;*:&#x2F;images_pasted&#x2F;${documentFileName}&#x2F;</p><p>hexo, 图片路径中不能包含下划线，否则不能显示</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> odnwo </category>
-          
-          <category> Tools </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>blog目录结构</title>
       <link href="/2024/03/31/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/"/>
       <url>/2024/03/31/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</url>
       
         <content type="html"><![CDATA[<ul><li>随记</li><li>Work<ul><li>项目相关<ul><li>brpc</li><li>rdma</li><li>service mesh</li><li>用户态协议栈</li></ul></li><li>技术学习<ul><li>编程语言<ul><li>C++</li><li>golang</li><li>rust</li></ul></li><li>linux性能优化</li><li>Tools<ul><li>git</li><li>vim</li></ul></li><li>Thinking</li></ul></li></ul></li><li>Vision<ul><li>web3.0<ul><li>revolut</li><li>web3.0怎么赚钱</li><li>web3.0项目分析</li></ul></li></ul></li><li>Invest</li><li>Language</li><li>Life<ul><li>Trip</li><li>Reading</li><li>Thinking</li></ul></li><li>odnwo<ul><li>Tools</li><li>Typingclub</li></ul></li></ul>]]></content>
       
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>随记</title>
-      <link href="/2024/03/31/%E9%9A%8F%E8%AE%B0/%E9%9A%8F%E8%AE%B0/"/>
-      <url>/2024/03/31/%E9%9A%8F%E8%AE%B0/%E9%9A%8F%E8%AE%B0/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 随记 </category>
-          
-      </categories>
       
       
     </entry>
@@ -308,29 +770,6 @@
     
     
     <entry>
-      <title>性能测试中的一些环境查看</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/%E7%94%A8%E6%88%B7%E6%80%81%E5%8D%8F%E8%AE%AE%E6%A0%88/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E7%8E%AF%E5%A2%83%E6%9F%A5%E7%9C%8B/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/%E7%94%A8%E6%88%B7%E6%80%81%E5%8D%8F%E8%AE%AE%E6%A0%88/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E7%8E%AF%E5%A2%83%E6%9F%A5%E7%9C%8B/</url>
-      
-        <content type="html"><![CDATA[<p>查看cpu信息：<br>cat &#x2F;proc&#x2F;cpuinfo | grep name | cut -f2 -d: | uniq -c<br>输出：56  Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz</p><p>查看网卡在哪些cpu上：<br>cat &#x2F;sys&#x2F;class&#x2F;net&#x2F;xgbe3&#x2F;device&#x2F;local_cpulist</p><p>查看numa的cpu占用：<br>numactl —hardware</p><p>查看网卡流量：<br>sar -n DEV 1</p><p>查看端口占用情况：<br>netstat -nat|grep -i “8080”</p><p>查看cpu占用情况：<br>perf top -p 25878</p><p>配置大页内存<br>echo 8192&gt; &#x2F;sys&#x2F;kernel&#x2F;mm&#x2F;hugepages&#x2F;hugepages-2048kB&#x2F;nr_hugepages<br>mkdir &#x2F;mnt&#x2F;huge<br>mount -t hugetlbfs nodev &#x2F;mnt&#x2F;huge</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> 用户态协议栈 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>无锁队列</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/%E7%94%A8%E6%88%B7%E6%80%81%E5%8D%8F%E8%AE%AE%E6%A0%88/%E6%97%A0%E9%94%81%E9%98%9F%E5%88%97/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/%E7%94%A8%E6%88%B7%E6%80%81%E5%8D%8F%E8%AE%AE%E6%A0%88/%E6%97%A0%E9%94%81%E9%98%9F%E5%88%97/</url>
@@ -400,34 +839,11 @@
     
     
     <entry>
-      <title>rte_ring_create内存分配卡住问题</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/rte_ring_create%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%8D%A1%E4%BD%8F%E9%97%AE%E9%A2%98/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/rte_ring_create%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%8D%A1%E4%BD%8F%E9%97%AE%E9%A2%98/</url>
+      <title>性能测试中的一些环境查看</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/%E7%94%A8%E6%88%B7%E6%80%81%E5%8D%8F%E8%AE%AE%E6%A0%88/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E7%8E%AF%E5%A2%83%E6%9F%A5%E7%9C%8B/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/%E7%94%A8%E6%88%B7%E6%80%81%E5%8D%8F%E8%AE%AE%E6%A0%88/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E7%8E%AF%E5%A2%83%E6%9F%A5%E7%9C%8B/</url>
       
-        <content type="html"><![CDATA[<p>最近调试代码的时候发现，rte_ring_create函数中会卡住<br>具体逻辑如下：</p><p><img src="/images/spdk-rte_ring_create-block.jpg" alt="Image"></p><p>控制变量法分析后，结论如下：</p><p>假设dpdk初始化使用的网卡，该网卡所在的核为：c10-c20 c30-c48<br>并且c10-c13核被isolate</p><p>那么如果给dpdk的初始化参数中传入的cpu核为c10-c13中的两个核，如果在程序中使用pthread_create创建线程，并且在线程中分配大页内存，就会卡住<br>当给dpdk的初始化参数中传入的cpu核为c30-c48中的两个核，在程序中使用pthread_create创建线程，并且在线程中分配大页内存，就没有问题</p><p>也就是：<br>如果将isolate的核作为dpdk的参数传入，那么在程序中新创建的pthread如果不affinitize到isolate的核上，那么就不能在其上分配大页内存。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> spdk </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>spdk plugin的使用</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/spdk%20plugin%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/spdk%20plugin%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-      
-        <content type="html"><![CDATA[<p>LD_PRELOAD&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;SPDK&#x2F;spdk-20.04.1&#x2F;examples&#x2F;nvme&#x2F;fio_plugin&#x2F;fio_plugin fio config.fio ‘–filename&#x3D;trtype&#x3D;RDMA adrfam&#x3D;IPv4 traddr&#x3D;127.0.0.1 trsvcid&#x3D;5260 ns&#x3D;1’</p><p>[global]<br>ioengine&#x3D;spdk<br>thread&#x3D;1<br>group_reporting&#x3D;1<br>direct&#x3D;1<br>runtime&#x3D;2<br>iodepth&#x3D;128<br>rw&#x3D;randwrite<br>bs&#x3D;4k<br>size&#x3D;4k<br>norandommap&#x3D;1</p><p>[test]<br>numjobs&#x3D;1</p><p>[global]<br>ioengine&#x3D;spdk_bdev<br>spdk_conf&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;SPDK&#x2F;spdk-20.04.1&#x2F;examples&#x2F;bdev&#x2F;fio_plugin&#x2F;bdev.conf.in<br>thread&#x3D;1<br>group_reporting&#x3D;1<br>direct&#x3D;1<br>runtime&#x3D;2<br>iodepth&#x3D;128<br>rw&#x3D;randwrite<br>bs&#x3D;4k<br>size&#x3D;4k<br>norandommap&#x3D;1</p><p>[test]<br>numjobs&#x3D;1</p><p>spdk-20.04.1&#x2F;examples&#x2F;bdev&#x2F;fio_plugin&#x2F;bdev.conf.in</p><p>[Malloc]<br>  NumberOfLuns 1<br>  LunSizeInMB 128<br>[Nvme]<br>  TransportID “trtype:RDMA adrfam&#x3D;IPv4 traddr&#x3D;127.0.0.1 trsvcid&#x3D;5260 hostaddr&#x3D;127.0.0.1 subnqn:xxx” Nvme1<br>  RetryCount 4<br>  TimeoutUsec 0<br>  AcctionOnTimeout None<br>  AdminPollRate 100000</p><p>（最终用下面的测试成功）<br>spdk-20.04.1&#x2F;examples&#x2F;nvme&#x2F;perf<br>.&#x2F;perf -c 0x3C0000000000 -q 128 -t 20 -w randread -o 4096 -r ‘trtype:RDMA adrfam:IPv4 traddr:127.0.0.1 trsvcid:5260 subnqn:xxx’</p><p>spdk编译<br>.&#x2F;configure –with-fio&#x3D;xxx&#x2F;FIO&#x2F;fio-fio-3.26 –with-dpdk&#x3D;xxx&#x2F;DPDK&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost</p><p>DPDK编译加如下项：<br>EXTRA_CFLAGS&#x3D;-fPIC</p>]]></content>
+        <content type="html"><![CDATA[<p>查看cpu信息：<br>cat &#x2F;proc&#x2F;cpuinfo | grep name | cut -f2 -d: | uniq -c<br>输出：56  Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz</p><p>查看网卡在哪些cpu上：<br>cat &#x2F;sys&#x2F;class&#x2F;net&#x2F;xgbe3&#x2F;device&#x2F;local_cpulist</p><p>查看numa的cpu占用：<br>numactl —hardware</p><p>查看网卡流量：<br>sar -n DEV 1</p><p>查看端口占用情况：<br>netstat -nat|grep -i “8080”</p><p>查看cpu占用情况：<br>perf top -p 25878</p><p>配置大页内存<br>echo 8192&gt; &#x2F;sys&#x2F;kernel&#x2F;mm&#x2F;hugepages&#x2F;hugepages-2048kB&#x2F;nr_hugepages<br>mkdir &#x2F;mnt&#x2F;huge<br>mount -t hugetlbfs nodev &#x2F;mnt&#x2F;huge</p>]]></content>
       
       
       <categories>
@@ -436,7 +852,7 @@
           
           <category> 项目相关 </category>
           
-          <category> spdk </category>
+          <category> 用户态协议栈 </category>
           
       </categories>
       
@@ -451,6 +867,29 @@
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/spdk%E5%A4%84%E7%90%86%E9%80%BB%E8%BE%91%E6%A2%B3%E7%90%86/</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> spdk </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>rte_ring_create内存分配卡住问题</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/rte_ring_create%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%8D%A1%E4%BD%8F%E9%97%AE%E9%A2%98/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/rte_ring_create%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%8D%A1%E4%BD%8F%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>最近调试代码的时候发现，rte_ring_create函数中会卡住<br>具体逻辑如下：</p><p><img src="/images/spdk-rte_ring_create-block.jpg" alt="Image"></p><p>控制变量法分析后，结论如下：</p><p>假设dpdk初始化使用的网卡，该网卡所在的核为：c10-c20 c30-c48<br>并且c10-c13核被isolate</p><p>那么如果给dpdk的初始化参数中传入的cpu核为c10-c13中的两个核，如果在程序中使用pthread_create创建线程，并且在线程中分配大页内存，就会卡住<br>当给dpdk的初始化参数中传入的cpu核为c30-c48中的两个核，在程序中使用pthread_create创建线程，并且在线程中分配大页内存，就没有问题</p><p>也就是：<br>如果将isolate的核作为dpdk的参数传入，那么在程序中新创建的pthread如果不affinitize到isolate的核上，那么就不能在其上分配大页内存。</p>]]></content>
       
       
       <categories>
@@ -492,11 +931,11 @@
     
     
     <entry>
-      <title>spdk编译</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/spdk%E7%BC%96%E8%AF%91/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/spdk%E7%BC%96%E8%AF%91/</url>
+      <title>spdk plugin的使用</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/spdk%20plugin%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/spdk%20plugin%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
       
-        <content type="html"><![CDATA[<p>解压：<br>unzip spdk-20.04.1.zip</p><p>编译：<br>指定dpdk路径和rdma选项<br>查看编译选项：.&#x2F;configure -h<br>命令：<br>.&#x2F;configure –with-dpdk&#x3D;xxx&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc —with-rdma</p><p>make -j</p><p>报错1：<br>error: wrong number of arguments specified for ‘deprecated’ attribute<br>与dpdk相同，设置PATH路径为编译器bin目录</p><p>报错2：<br> error: unknown type name ‘u16’<br>指定内核C_INCLUDE_PATH为inlcude目录</p><p>报错3：<br>fatal error: infiniband&#x2F;verbs.h: No such file or directory<br>C_INCLUDE_PATH环境变量加上&#x2F;usr&#x2F;include&#x2F;目录<br>至此，编译命令为：<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make -j</p><p>报错4：<br>error: storage size of ‘g_spdk_extern_vhost_ops’ isn’t known<br>查看上下文发现报错与vhost有关，在编译选项中disable掉vhost模块<br>.&#x2F;configure –with-dpdk&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;DPDK&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost</p><p>报错5：<br>fatal error: libaio.h: No such file or directory<br>安装对应的库：<br>yum install libaio.x86_64 libaio-devel.x86_64</p><p>报错6：<br>CUnit&#x2F;Basic.h: No such file or directory<br>需要安装CUnit-devel<br>CUnit-devel安装步骤：<br>在网上下载：CUnit-2.1.3-13.el6.src.rpm</p><p>解压:<br>rpm2cpio CUnit-2.1.3-13.el6.src.rpm | cpio -idv<br>ls &#x2F;&#x2F; CUnit-2.1.3-13.el6.src.rpm  CUnit-2.1-3.tar.bz2  CUnit.spec<br>tar -jxvf CUnit-2.1-3.tar.bz2<br>cd CUnit-2.1-3</p><p>开始安装：<br>.&#x2F;bootstrap</p><p>报错1：<br>很多，不详细记录了<br>设置相关路径重新运行：<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 .&#x2F;bootstrap</p><p>报错2：<br>仍然有很多错：<br>LIBTOOL libtool.m4 RANLIB 等<br>首先解决libtool的问题：google此错误原因为，需要安装libtool</p><ol><li>下载libtool-2.4.6.tar.gz</li><li>解压：tar -xzf libtool-2.4.6.tar.gz<br>cd libtool-2.4.6</li><li>安装<br>M4&#x3D;&#x2F;usr&#x2F;share&#x2F;aclocal .&#x2F;configure –prefix&#x3D;&#x2F;usr<br>make<br>make install<br>至此，libtool安装成功<br>上面M4环境变量是为了解决如下错误：<br>error: library used but ‘RANLIB’ is undefined<br>libtoolize:   <code>/usr/share/aclocal/libtool.m4&#39; libtoolize:   </code>&#x2F;usr&#x2F;share&#x2F;aclocal&#x2F;ltoptions.m4’<br>libtoolize:   <code>/usr/share/aclocal/ltversion.m4&#39; libtoolize:   </code>&#x2F;usr&#x2F;share&#x2F;aclocal&#x2F;ltsugar.m4’<br>libtoolize:   &#96;&#x2F;usr&#x2F;share&#x2F;aclocal&#x2F;lt~obsolete.m4’</li></ol><p>继续安装CUnit-devel<br>仍然有很多报错，还有关于libtool的<br>which libtool &#x2F;&#x2F; &#x2F;usr&#x2F;bin&#x2F;libtool<br>将&#x2F;usr&#x2F;bin&#x2F;添加为PATH的路径</p><p>至此，CUnit-devel的安装路径为：<br>PATH&#x3D;编译器bin目录:&#x2F;usr&#x2F;bin:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 .&#x2F;bootstrap</p><p>PATH&#x3D;编译器bin目录:&#x2F;usr&#x2F;bin:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 .&#x2F;configure<br>PATH&#x3D;编译器bin目录:&#x2F;usr&#x2F;bin:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make<br>PATH&#x3D;编译器bin目录:&#x2F;usr&#x2F;bin:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make install</p><p>这个时候查找</p><p>继续安装spdk<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make -j</p><p>报错7：<br>fatal error: CUnit&#x2F;Basic.h: No such file or directory<br>寻找缺失头文件：<br>find ..&#x2F;CUnit&#x2F; -name Basic.h     &#x2F;&#x2F; xx&#x2F;CUnit&#x2F;CUnit-2.1-3&#x2F;CUnit&#x2F;Headers&#x2F;Basic.h<br>加入此目录，仍然报错<br>返回重新安装CUnit-devel<br>发现问题是，只执行了.&#x2F;bootstrap；执行.&#x2F;configure make make install的时候没有加前面的路径<br>重新安装后，查找Basic.h头文件，find &#x2F;usr&#x2F; -name Basic.h<br>正确的输出包含如下路径：<br>&#x2F;usr&#x2F;local&#x2F;include&#x2F;CUnit&#x2F;Basic.h</p><p>步骤8：<br>在C_INCLUDE_PATH环境变量中加入如下路径：<br>&#x2F;usr&#x2F;local&#x2F;include</p><p>步骤9：<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F;:&#x2F;usr&#x2F;local&#x2F;include LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make -j</p><p>报错10：<br>cannot find -lcunit<br>在LIBRARY_PATH环境变量中添加如下路径：&#x2F;usr&#x2F;local&#x2F;lib64<br>或&#x2F;usr&#x2F;local&#x2F;include（两个路径都可以解决问题，也是奇怪）</p><p>步骤11：<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F;:&#x2F;usr&#x2F;local&#x2F;include LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64:&#x2F;usr&#x2F;local&#x2F;lib64 make -j</p><p>至此，spdk编译成功<br>.&#x2F;configure –with-dpdk&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;DPDK&#x2F;dpdk-stable-19.11.5-normal&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost<br>PATH&#x3D;&#x2F;opt&#x2F;compiler&#x2F;gcc-8.2&#x2F;bin&#x2F;:$PATH C_INCLUDE_PATH&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;KERNEL-4.14&#x2F;KERNEL_4.14-36&#x2F;baidu&#x2F;kernel&#x2F;linux-4-14&#x2F;usr&#x2F;include:&#x2F;usr&#x2F;include&#x2F;:&#x2F;usr&#x2F;local&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64&#x2F;:&#x2F;usr&#x2F;local&#x2F;lib64 make -j</p><p>扩展：<br>–enable-debug<br>.&#x2F;configure –enable-debug –with-dpdk&#x3D;xxx&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost</p><p>编译后库文件目录：<br>.a文件目录：build&#x2F;lib&#x2F;<br>.h文件目录：include&#x2F;spdk&#x2F;<br>拷贝需要：cp -L</p><p>.&#x2F;configure –with-dpdk&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;DPDK&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost</p><p>PATH&#x3D;&#x2F;opt&#x2F;compiler&#x2F;gcc-8.2&#x2F;bin&#x2F;:$PATH C_INCLUDE_PATH&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;KERNEL-4.14&#x2F;KERNEL_4.14-36&#x2F;baidu&#x2F;kernel&#x2F;linux-4-14&#x2F;usr&#x2F;include:&#x2F;usr&#x2F;include&#x2F;:&#x2F;usr&#x2F;local&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64&#x2F;:&#x2F;usr&#x2F;local&#x2F;lib64 make -j</p><p>strings -f .&#x2F;lib&#x2F;*.a | grep “SPDK_NVMF_TRANSPORT_REGISTER”</p><p>yes | cp -L &#x2F;home&#x2F;users&#x2F;dujing05&#x2F;SPDK&#x2F;spdk-20.04.1&#x2F;include&#x2F;spdk&#x2F;<em>.h include&#x2F;spdk&#x2F;<br>yes | cp -L &#x2F;home&#x2F;users&#x2F;dujing05&#x2F;SPDK&#x2F;spdk-20.04.1&#x2F;build&#x2F;lib&#x2F;</em>.a .&#x2F;lib&#x2F;</p>]]></content>
+        <content type="html"><![CDATA[<p>LD_PRELOAD&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;SPDK&#x2F;spdk-20.04.1&#x2F;examples&#x2F;nvme&#x2F;fio_plugin&#x2F;fio_plugin fio config.fio ‘–filename&#x3D;trtype&#x3D;RDMA adrfam&#x3D;IPv4 traddr&#x3D;127.0.0.1 trsvcid&#x3D;5260 ns&#x3D;1’</p><p>[global]<br>ioengine&#x3D;spdk<br>thread&#x3D;1<br>group_reporting&#x3D;1<br>direct&#x3D;1<br>runtime&#x3D;2<br>iodepth&#x3D;128<br>rw&#x3D;randwrite<br>bs&#x3D;4k<br>size&#x3D;4k<br>norandommap&#x3D;1</p><p>[test]<br>numjobs&#x3D;1</p><p>[global]<br>ioengine&#x3D;spdk_bdev<br>spdk_conf&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;SPDK&#x2F;spdk-20.04.1&#x2F;examples&#x2F;bdev&#x2F;fio_plugin&#x2F;bdev.conf.in<br>thread&#x3D;1<br>group_reporting&#x3D;1<br>direct&#x3D;1<br>runtime&#x3D;2<br>iodepth&#x3D;128<br>rw&#x3D;randwrite<br>bs&#x3D;4k<br>size&#x3D;4k<br>norandommap&#x3D;1</p><p>[test]<br>numjobs&#x3D;1</p><p>spdk-20.04.1&#x2F;examples&#x2F;bdev&#x2F;fio_plugin&#x2F;bdev.conf.in</p><p>[Malloc]<br>  NumberOfLuns 1<br>  LunSizeInMB 128<br>[Nvme]<br>  TransportID “trtype:RDMA adrfam&#x3D;IPv4 traddr&#x3D;127.0.0.1 trsvcid&#x3D;5260 hostaddr&#x3D;127.0.0.1 subnqn:xxx” Nvme1<br>  RetryCount 4<br>  TimeoutUsec 0<br>  AcctionOnTimeout None<br>  AdminPollRate 100000</p><p>（最终用下面的测试成功）<br>spdk-20.04.1&#x2F;examples&#x2F;nvme&#x2F;perf<br>.&#x2F;perf -c 0x3C0000000000 -q 128 -t 20 -w randread -o 4096 -r ‘trtype:RDMA adrfam:IPv4 traddr:127.0.0.1 trsvcid:5260 subnqn:xxx’</p><p>spdk编译<br>.&#x2F;configure –with-fio&#x3D;xxx&#x2F;FIO&#x2F;fio-fio-3.26 –with-dpdk&#x3D;xxx&#x2F;DPDK&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost</p><p>DPDK编译加如下项：<br>EXTRA_CFLAGS&#x3D;-fPIC</p>]]></content>
       
       
       <categories>
@@ -515,11 +954,11 @@
     
     
     <entry>
-      <title>一些疑问</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/%E4%B8%80%E4%BA%9B%E7%96%91%E9%97%AE/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/%E4%B8%80%E4%BA%9B%E7%96%91%E9%97%AE/</url>
+      <title>spdk编译</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/spdk%E7%BC%96%E8%AF%91/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/spdk%E7%BC%96%E8%AF%91/</url>
       
-        <content type="html"><![CDATA[<p>nvme0n1这个dev是如何来的，真实存在在服务器上？<br>attach_volume<br>直接调用spdk_thread_send_msg发送消息到admin进程</p>]]></content>
+        <content type="html"><![CDATA[<p>解压：<br>unzip spdk-20.04.1.zip</p><p>编译：<br>指定dpdk路径和rdma选项<br>查看编译选项：.&#x2F;configure -h<br>命令：<br>.&#x2F;configure –with-dpdk&#x3D;xxx&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc —with-rdma</p><p>make -j</p><p>报错1：<br>error: wrong number of arguments specified for ‘deprecated’ attribute<br>与dpdk相同，设置PATH路径为编译器bin目录</p><p>报错2：<br> error: unknown type name ‘u16’<br>指定内核C_INCLUDE_PATH为inlcude目录</p><p>报错3：<br>fatal error: infiniband&#x2F;verbs.h: No such file or directory<br>C_INCLUDE_PATH环境变量加上&#x2F;usr&#x2F;include&#x2F;目录<br>至此，编译命令为：<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make -j</p><p>报错4：<br>error: storage size of ‘g_spdk_extern_vhost_ops’ isn’t known<br>查看上下文发现报错与vhost有关，在编译选项中disable掉vhost模块<br>.&#x2F;configure –with-dpdk&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;DPDK&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost</p><p>报错5：<br>fatal error: libaio.h: No such file or directory<br>安装对应的库：<br>yum install libaio.x86_64 libaio-devel.x86_64</p><p>报错6：<br>CUnit&#x2F;Basic.h: No such file or directory<br>需要安装CUnit-devel<br>CUnit-devel安装步骤：<br>在网上下载：CUnit-2.1.3-13.el6.src.rpm</p><p>解压:<br>rpm2cpio CUnit-2.1.3-13.el6.src.rpm | cpio -idv<br>ls &#x2F;&#x2F; CUnit-2.1.3-13.el6.src.rpm  CUnit-2.1-3.tar.bz2  CUnit.spec<br>tar -jxvf CUnit-2.1-3.tar.bz2<br>cd CUnit-2.1-3</p><p>开始安装：<br>.&#x2F;bootstrap</p><p>报错1：<br>很多，不详细记录了<br>设置相关路径重新运行：<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 .&#x2F;bootstrap</p><p>报错2：<br>仍然有很多错：<br>LIBTOOL libtool.m4 RANLIB 等<br>首先解决libtool的问题：google此错误原因为，需要安装libtool</p><ol><li>下载libtool-2.4.6.tar.gz</li><li>解压：tar -xzf libtool-2.4.6.tar.gz<br>cd libtool-2.4.6</li><li>安装<br>M4&#x3D;&#x2F;usr&#x2F;share&#x2F;aclocal .&#x2F;configure –prefix&#x3D;&#x2F;usr<br>make<br>make install<br>至此，libtool安装成功<br>上面M4环境变量是为了解决如下错误：<br>error: library used but ‘RANLIB’ is undefined<br>libtoolize:   <code>/usr/share/aclocal/libtool.m4&#39; libtoolize:   </code>&#x2F;usr&#x2F;share&#x2F;aclocal&#x2F;ltoptions.m4’<br>libtoolize:   <code>/usr/share/aclocal/ltversion.m4&#39; libtoolize:   </code>&#x2F;usr&#x2F;share&#x2F;aclocal&#x2F;ltsugar.m4’<br>libtoolize:   &#96;&#x2F;usr&#x2F;share&#x2F;aclocal&#x2F;lt~obsolete.m4’</li></ol><p>继续安装CUnit-devel<br>仍然有很多报错，还有关于libtool的<br>which libtool &#x2F;&#x2F; &#x2F;usr&#x2F;bin&#x2F;libtool<br>将&#x2F;usr&#x2F;bin&#x2F;添加为PATH的路径</p><p>至此，CUnit-devel的安装路径为：<br>PATH&#x3D;编译器bin目录:&#x2F;usr&#x2F;bin:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 .&#x2F;bootstrap</p><p>PATH&#x3D;编译器bin目录:&#x2F;usr&#x2F;bin:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 .&#x2F;configure<br>PATH&#x3D;编译器bin目录:&#x2F;usr&#x2F;bin:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make<br>PATH&#x3D;编译器bin目录:&#x2F;usr&#x2F;bin:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make install</p><p>这个时候查找</p><p>继续安装spdk<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make -j</p><p>报错7：<br>fatal error: CUnit&#x2F;Basic.h: No such file or directory<br>寻找缺失头文件：<br>find ..&#x2F;CUnit&#x2F; -name Basic.h     &#x2F;&#x2F; xx&#x2F;CUnit&#x2F;CUnit-2.1-3&#x2F;CUnit&#x2F;Headers&#x2F;Basic.h<br>加入此目录，仍然报错<br>返回重新安装CUnit-devel<br>发现问题是，只执行了.&#x2F;bootstrap；执行.&#x2F;configure make make install的时候没有加前面的路径<br>重新安装后，查找Basic.h头文件，find &#x2F;usr&#x2F; -name Basic.h<br>正确的输出包含如下路径：<br>&#x2F;usr&#x2F;local&#x2F;include&#x2F;CUnit&#x2F;Basic.h</p><p>步骤8：<br>在C_INCLUDE_PATH环境变量中加入如下路径：<br>&#x2F;usr&#x2F;local&#x2F;include</p><p>步骤9：<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F;:&#x2F;usr&#x2F;local&#x2F;include LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64 make -j</p><p>报错10：<br>cannot find -lcunit<br>在LIBRARY_PATH环境变量中添加如下路径：&#x2F;usr&#x2F;local&#x2F;lib64<br>或&#x2F;usr&#x2F;local&#x2F;include（两个路径都可以解决问题，也是奇怪）</p><p>步骤11：<br>PATH&#x3D;编译器bin目录:$PATH C_INCLUDE_PATH&#x3D;内核include目录:&#x2F;usr&#x2F;include&#x2F;:&#x2F;usr&#x2F;local&#x2F;include LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64:&#x2F;usr&#x2F;local&#x2F;lib64 make -j</p><p>至此，spdk编译成功<br>.&#x2F;configure –with-dpdk&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;DPDK&#x2F;dpdk-stable-19.11.5-normal&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost<br>PATH&#x3D;&#x2F;opt&#x2F;compiler&#x2F;gcc-8.2&#x2F;bin&#x2F;:$PATH C_INCLUDE_PATH&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;KERNEL-4.14&#x2F;KERNEL_4.14-36&#x2F;baidu&#x2F;kernel&#x2F;linux-4-14&#x2F;usr&#x2F;include:&#x2F;usr&#x2F;include&#x2F;:&#x2F;usr&#x2F;local&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64&#x2F;:&#x2F;usr&#x2F;local&#x2F;lib64 make -j</p><p>扩展：<br>–enable-debug<br>.&#x2F;configure –enable-debug –with-dpdk&#x3D;xxx&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost</p><p>编译后库文件目录：<br>.a文件目录：build&#x2F;lib&#x2F;<br>.h文件目录：include&#x2F;spdk&#x2F;<br>拷贝需要：cp -L</p><p>.&#x2F;configure –with-dpdk&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;DPDK&#x2F;dpdk-stable-19.11.5&#x2F;x86_64-native-linuxapp-gcc –with-rdma –without-vhost</p><p>PATH&#x3D;&#x2F;opt&#x2F;compiler&#x2F;gcc-8.2&#x2F;bin&#x2F;:$PATH C_INCLUDE_PATH&#x3D;&#x2F;home&#x2F;users&#x2F;dujing05&#x2F;KERNEL-4.14&#x2F;KERNEL_4.14-36&#x2F;baidu&#x2F;kernel&#x2F;linux-4-14&#x2F;usr&#x2F;include:&#x2F;usr&#x2F;include&#x2F;:&#x2F;usr&#x2F;local&#x2F;include&#x2F; LIBRARY_PATH&#x3D;&#x2F;usr&#x2F;lib64&#x2F;:&#x2F;usr&#x2F;local&#x2F;lib64 make -j</p><p>strings -f .&#x2F;lib&#x2F;*.a | grep “SPDK_NVMF_TRANSPORT_REGISTER”</p><p>yes | cp -L &#x2F;home&#x2F;users&#x2F;dujing05&#x2F;SPDK&#x2F;spdk-20.04.1&#x2F;include&#x2F;spdk&#x2F;<em>.h include&#x2F;spdk&#x2F;<br>yes | cp -L &#x2F;home&#x2F;users&#x2F;dujing05&#x2F;SPDK&#x2F;spdk-20.04.1&#x2F;build&#x2F;lib&#x2F;</em>.a .&#x2F;lib&#x2F;</p>]]></content>
       
       
       <categories>
@@ -607,11 +1046,34 @@
     
     
     <entry>
-      <title>rdma硬件操作的一些命令</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/rdma/rdma%E7%A1%AC%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/rdma/rdma%E7%A1%AC%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/</url>
+      <title>一些疑问</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/%E4%B8%80%E4%BA%9B%E7%96%91%E9%97%AE/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/%E4%B8%80%E4%BA%9B%E7%96%91%E9%97%AE/</url>
       
-        <content type="html"><![CDATA[<p>1.查看是否支持rdma网卡<br>lspci -v | grep Mellanox</p><p>如果这个没有信息输出，大概率是不支持的，可以在看一下目前普通网卡的情况</p><p>lspci -v | grep Network</p><p>2.确定pci地址对应的哪个网卡<br>ethtool -i eth0<br>3.用mlxconfig查看更详细的信息<br>mlxconfig -d pci_info q</p><p>找到ConnectX-6硬件的MST(Mellanox Software Tools)编号<br>mst status -v</p><p>4.查看mlx序号<br>mst status -v</p>]]></content>
+        <content type="html"><![CDATA[<p>nvme0n1这个dev是如何来的，真实存在在服务器上？<br>attach_volume<br>直接调用spdk_thread_send_msg发送消息到admin进程</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> spdk </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>debian SoftRoce使用</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/rdma/debian%20SoftRoce%E4%BD%BF%E7%94%A8/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/rdma/debian%20SoftRoce%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<p>apt-get install libibverbs-dev librdmacm-dev rdma-core</p><p>modprobe rdma_rxe</p><p>modinfo rdma_rxe</p><p><a href="https://github.com/SoftRoCE/librxe-dev">https://github.com/SoftRoCE/librxe-dev</a><br>rxe_cfg start<br>rxe_cfg add eth0<br>rxe_cfg status<br>ibv_devices        &#x2F;&#x2F; apt-get install rdmacm-utils, apt-get install ibverbs-utils<br>ibv_devinfo<br>ibv_devinfo -v -d rxe0<br>rping -s -a ip -v -C 10<br>&#x2F;&#x2F; 上面的命令如果报错: rdma_create_event_channel: No such device<br>apt-get install librxe-dev</p><p>rping: command not found<br>apt-get install rdmacm-utils</p><p>测试：<br>rping -c -a ip -v -C 10<br>rping -s -a ip -v -C 10</p><p>.&#x2F;build&#x2F;bin&#x2F;ibv_rc_pingpong -d rxe0 -g 0<br>.&#x2F;build&#x2F;bin&#x2F;ibv_rc_pingpong -d rxe0 -g 0 server_ip</p><p>ib_send_bw -n 10000 -d rxe0 -i 1  -F —report_gbits<br>ib_send_bw -n 10000 -d rxe0 -i 1 -F –report_gbits server_ip</p><p>rping -h<br>rping -s [-vVd] [-S size] [-C count] [-a addr] [-p port]<br>rping -c [-vVd] [-S size] [-C count] -a addr [-p port]<br>    -c        client side<br>    -s        server side.  To bind to any address with IPv6 use -a ::0<br>    -v        display ping data to stdout<br>    -V        validate ping data<br>    -d        debug printfs<br>    -S size     ping data size<br>    -C count    ping count times<br>    -a addr        address<br>    -p port        port<br>    -P        persistent server mode allowing multiple connections</p><p>whereis gcc</p><p>ln -s 目标文件 要创建的软链<br>ln -snf </p><p>rping编译:<br>gcc编译多个.h .c <a href="https://www.jianshu.com/p/e5c6a255076b">https://www.jianshu.com/p/e5c6a255076b</a><br>git clone <a href="https://github.com/linux-rdma/rdma-core.git">https://github.com/linux-rdma/rdma-core.git</a><br>gcc -c common.c -o common.o<br>gcc -W -libverbs -lrdmacm -lpthread rping.c -o rping -I include&#x2F; include&#x2F;common.c    </p><p>ll &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so*<br>lrwxrwxrwx 1 root root     47 Mar 22 18:11 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so -&gt; &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1.3.34.0<br>lrwxrwxrwx 1 root root     47 Mar 22 18:18 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1 -&gt; &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1.3.34.0<br>-rw-r–r– 1 root root  88224 Mar 22 18:10 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1.0.0<br>-rwxr-xr-x 1 root root 473264 Mar 22 18:10 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1.3.34.0</p><p>ll &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs*<br>-rw-r–r– 1 root root 112350 Mar 22 18:10 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.a<br>lrwxrwxrwx 1 root root     49 Mar 22 18:14 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so -&gt; &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1.12.34.0<br>lrwxrwxrwx 1 root root     49 Mar 22 18:19 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1 -&gt; &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1.12.34.0<br>-rw-r–r– 1 root root  75768 Mar 22 18:10 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1.0.0<br>-rwxr-xr-x 1 root root 982160 Mar 22 18:13 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1.12.34.0</p><p>.&#x2F;rping: &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1: version &#96;RDMACM_1.2’ not found (required by .&#x2F;rping)<br>报错，用如下方法修复<br>LD_LIBRARY_PATH&#x3D;$LD_LIBRARY_PATH:&#x2F;data00&#x2F;XXX&#x2F;rdma-core&#x2F;build&#x2F;lib .&#x2F;rping -s -a ip -p 8888-v -C 1 -d -P</p><p>ibstat调试</p><p>ibstat<br>apt-get install infiniband-diags</p><p>docker exec -it a4b6e1809538 &#x2F;bin&#x2F;bash</p><p>docker stats –format “table \t\t“</p><p>apt-get install libnl-route-3-200</p><p>ibwarn: [4638] umad_init: can’t read ABI version from &#x2F;sys&#x2F;class&#x2F;infiniband_mad&#x2F;abi_version (No such file or directory): is ib_umad module loaded?<br>ibpanic: [4638] main: can’t init UMAD library: No such file or directory</p><p>modprobe ib_umad</p><p>apt-get install -y libunwind-dev</p><p>dpkg -i –force-overwrite &#x2F;var&#x2F;cache&#x2F;apt&#x2F;archive</p>]]></content>
       
       
       <categories>
@@ -653,11 +1115,11 @@
     
     
     <entry>
-      <title>debian SoftRoce使用</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/rdma/debian%20SoftRoce%E4%BD%BF%E7%94%A8/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/rdma/debian%20SoftRoce%E4%BD%BF%E7%94%A8/</url>
+      <title>rdma硬件操作的一些命令</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/rdma/rdma%E7%A1%AC%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/rdma/rdma%E7%A1%AC%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/</url>
       
-        <content type="html"><![CDATA[<p>apt-get install libibverbs-dev librdmacm-dev rdma-core</p><p>modprobe rdma_rxe</p><p>modinfo rdma_rxe</p><p><a href="https://github.com/SoftRoCE/librxe-dev">https://github.com/SoftRoCE/librxe-dev</a><br>rxe_cfg start<br>rxe_cfg add eth0<br>rxe_cfg status<br>ibv_devices        &#x2F;&#x2F; apt-get install rdmacm-utils, apt-get install ibverbs-utils<br>ibv_devinfo<br>ibv_devinfo -v -d rxe0<br>rping -s -a ip -v -C 10<br>&#x2F;&#x2F; 上面的命令如果报错: rdma_create_event_channel: No such device<br>apt-get install librxe-dev</p><p>rping: command not found<br>apt-get install rdmacm-utils</p><p>测试：<br>rping -c -a ip -v -C 10<br>rping -s -a ip -v -C 10</p><p>.&#x2F;build&#x2F;bin&#x2F;ibv_rc_pingpong -d rxe0 -g 0<br>.&#x2F;build&#x2F;bin&#x2F;ibv_rc_pingpong -d rxe0 -g 0 server_ip</p><p>ib_send_bw -n 10000 -d rxe0 -i 1  -F —report_gbits<br>ib_send_bw -n 10000 -d rxe0 -i 1 -F –report_gbits server_ip</p><p>rping -h<br>rping -s [-vVd] [-S size] [-C count] [-a addr] [-p port]<br>rping -c [-vVd] [-S size] [-C count] -a addr [-p port]<br>    -c        client side<br>    -s        server side.  To bind to any address with IPv6 use -a ::0<br>    -v        display ping data to stdout<br>    -V        validate ping data<br>    -d        debug printfs<br>    -S size     ping data size<br>    -C count    ping count times<br>    -a addr        address<br>    -p port        port<br>    -P        persistent server mode allowing multiple connections</p><p>whereis gcc</p><p>ln -s 目标文件 要创建的软链<br>ln -snf </p><p>rping编译:<br>gcc编译多个.h .c <a href="https://www.jianshu.com/p/e5c6a255076b">https://www.jianshu.com/p/e5c6a255076b</a><br>git clone <a href="https://github.com/linux-rdma/rdma-core.git">https://github.com/linux-rdma/rdma-core.git</a><br>gcc -c common.c -o common.o<br>gcc -W -libverbs -lrdmacm -lpthread rping.c -o rping -I include&#x2F; include&#x2F;common.c    </p><p>ll &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so*<br>lrwxrwxrwx 1 root root     47 Mar 22 18:11 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so -&gt; &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1.3.34.0<br>lrwxrwxrwx 1 root root     47 Mar 22 18:18 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1 -&gt; &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1.3.34.0<br>-rw-r–r– 1 root root  88224 Mar 22 18:10 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1.0.0<br>-rwxr-xr-x 1 root root 473264 Mar 22 18:10 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1.3.34.0</p><p>ll &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs*<br>-rw-r–r– 1 root root 112350 Mar 22 18:10 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.a<br>lrwxrwxrwx 1 root root     49 Mar 22 18:14 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so -&gt; &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1.12.34.0<br>lrwxrwxrwx 1 root root     49 Mar 22 18:19 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1 -&gt; &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1.12.34.0<br>-rw-r–r– 1 root root  75768 Mar 22 18:10 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1.0.0<br>-rwxr-xr-x 1 root root 982160 Mar 22 18:13 &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libibverbs.so.1.12.34.0</p><p>.&#x2F;rping: &#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;librdmacm.so.1: version &#96;RDMACM_1.2’ not found (required by .&#x2F;rping)<br>报错，用如下方法修复<br>LD_LIBRARY_PATH&#x3D;$LD_LIBRARY_PATH:&#x2F;data00&#x2F;XXX&#x2F;rdma-core&#x2F;build&#x2F;lib .&#x2F;rping -s -a ip -p 8888-v -C 1 -d -P</p><p>ibstat调试</p><p>ibstat<br>apt-get install infiniband-diags</p><p>docker exec -it a4b6e1809538 &#x2F;bin&#x2F;bash</p><p>docker stats –format “table \t\t“</p><p>apt-get install libnl-route-3-200</p><p>ibwarn: [4638] umad_init: can’t read ABI version from &#x2F;sys&#x2F;class&#x2F;infiniband_mad&#x2F;abi_version (No such file or directory): is ib_umad module loaded?<br>ibpanic: [4638] main: can’t init UMAD library: No such file or directory</p><p>modprobe ib_umad</p><p>apt-get install -y libunwind-dev</p><p>dpkg -i –force-overwrite &#x2F;var&#x2F;cache&#x2F;apt&#x2F;archive</p>]]></content>
+        <content type="html"><![CDATA[<p>1.查看是否支持rdma网卡<br>lspci -v | grep Mellanox</p><p>如果这个没有信息输出，大概率是不支持的，可以在看一下目前普通网卡的情况</p><p>lspci -v | grep Network</p><p>2.确定pci地址对应的哪个网卡<br>ethtool -i eth0<br>3.用mlxconfig查看更详细的信息<br>mlxconfig -d pci_info q</p><p>找到ConnectX-6硬件的MST(Mellanox Software Tools)编号<br>mst status -v</p><p>4.查看mlx序号<br>mst status -v</p>]]></content>
       
       
       <categories>
@@ -768,11 +1230,11 @@
     
     
     <entry>
-      <title>qpair</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/qpair/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/qpair/</url>
+      <title>fio plugin</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/fio%20plugin/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/fio%20plugin/</url>
       
-        <content type="html"><![CDATA[<p>每个TCP连接(TCP connection)对应于一个NVMe的qpair。在SPDK的实现中,我们依然采用group polling的方法来管理所有的TCP连接。每一个SPDK thread上运行一个TCP相关的polling group,每一个TCP连接只会被加入一个TCP polling group中,由这个polling group处理后续的所有事件,那么这个TCP连接将会被唯一的CPU core处理,这样就不会存在CPU的竞争情况</p>]]></content>
+        <content type="html"><![CDATA[<p><a href="https://open.tech2real.com/info_detail_page?id=18642#index">https://open.tech2real.com/info_detail_page?id=18642#index</a></p><p>sudo HUGEMEM&#x3D;32768 .&#x2F;scripts&#x2F;setup.sh</p>]]></content>
       
       
       <categories>
@@ -791,11 +1253,11 @@
     
     
     <entry>
-      <title>fio plugin</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/fio%20plugin/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/fio%20plugin/</url>
+      <title>qpair</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/qpair/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/spdk/qpair/</url>
       
-        <content type="html"><![CDATA[<p><a href="https://open.tech2real.com/info_detail_page?id=18642#index">https://open.tech2real.com/info_detail_page?id=18642#index</a></p><p>sudo HUGEMEM&#x3D;32768 .&#x2F;scripts&#x2F;setup.sh</p>]]></content>
+        <content type="html"><![CDATA[<p>每个TCP连接(TCP connection)对应于一个NVMe的qpair。在SPDK的实现中,我们依然采用group polling的方法来管理所有的TCP连接。每一个SPDK thread上运行一个TCP相关的polling group,每一个TCP连接只会被加入一个TCP polling group中,由这个polling group处理后续的所有事件,那么这个TCP连接将会被唯一的CPU core处理,这样就不会存在CPU的竞争情况</p>]]></content>
       
       
       <categories>
@@ -860,6 +1322,29 @@
     
     
     <entry>
+      <title>架构认识</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E6%9E%B6%E6%9E%84%E8%AE%A4%E8%AF%86/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E6%9E%B6%E6%9E%84%E8%AE%A4%E8%AF%86/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/etcd-arch.jpg" alt="image"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> etcd </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>接口负载均衡</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E6%8E%A5%E5%8F%A3%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E6%8E%A5%E5%8F%A3%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</url>
@@ -883,11 +1368,11 @@
     
     
     <entry>
-      <title>架构认识</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E6%9E%B6%E6%9E%84%E8%AE%A4%E8%AF%86/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E6%9E%B6%E6%9E%84%E8%AE%A4%E8%AF%86/</url>
+      <title>踩坑</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E8%B8%A9%E5%9D%91/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E8%B8%A9%E5%9D%91/</url>
       
-        <content type="html"><![CDATA[<p><img src="/images/etcd-arch.jpg" alt="image"></p>]]></content>
+        <content type="html"><![CDATA[<p>腾讯k8s：<br><a href="https://www.jiqizhixin.com/articles/2020-07-21-17">https://www.jiqizhixin.com/articles/2020-07-21-17</a></p>]]></content>
       
       
       <categories>
@@ -920,29 +1405,6 @@
           <category> 项目相关 </category>
           
           <category> rdma </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>踩坑</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E8%B8%A9%E5%9D%91/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/etcd/%E8%B8%A9%E5%9D%91/</url>
-      
-        <content type="html"><![CDATA[<p>腾讯k8s：<br><a href="https://www.jiqizhixin.com/articles/2020-07-21-17">https://www.jiqizhixin.com/articles/2020-07-21-17</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> etcd </category>
           
       </categories>
       
@@ -1205,6 +1667,29 @@
     
     
     <entry>
+      <title>编译为什么需要那么多内存</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%BC%96%E8%AF%91%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E9%82%A3%E4%B9%88%E5%A4%9A%E5%86%85%E5%AD%98/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%BC%96%E8%AF%91%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E9%82%A3%E4%B9%88%E5%A4%9A%E5%86%85%E5%AD%98/</url>
+      
+        <content type="html"><![CDATA[<p>报错：<br>virtual memory exhausted: Cannot allocate memory</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> brpc </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>编译优化级别</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%BC%96%E8%AF%91%E4%BC%98%E5%8C%96%E7%BA%A7%E5%88%AB/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%BC%96%E8%AF%91%E4%BC%98%E5%8C%96%E7%BA%A7%E5%88%AB/</url>
@@ -1233,29 +1718,6 @@
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E8%B6%85%E7%BA%BF%E7%A8%8B/</url>
       
         <content type="html"><![CDATA[<p>物理CPU：<br>物理CPU就是插在主机上的真实的CPU硬件，在Linux下可以数不同的physical id 来确认主机的物理CPU个数。<br>cat &#x2F;proc&#x2F;cpuinfo | grep “physical id” | sort | uniq<br>physical id    : 0<br>physical id    : 1</p><p>核心数：<br>我们常常会听说多核处理器，其中的核指的就是核心数。在Linux下可以通过cores来确认主机的物理CPU的核心数。<br>cat &#x2F;proc&#x2F;cpuinfo | grep “cores” | uniq<br>cpu cores    : 14</p><p>逻辑CPU：<br>逻辑CPU跟超线程技术有联系，假如物理CPU不支持超线程的，那么逻辑CPU的数量等于核心数的数量；<br>如果物理CPU支持超线程，那么逻辑CPU的数目是核心数数目的两倍。在Linux下可以通过 processors 的数目来确认逻辑CPU的数量。<br>cat &#x2F;proc&#x2F;cpuinfo | grep “processor” | wc -l<br>56</p><p>利用dpdk的工具可以查看cpu分布情况：<br>xxx&#x2F;dpdk-stable-19.11.5&#x2F;usertools&#x2F;cpu_layout.py</p><p><img src="/images/super-thread.jpg" alt="Image"></p><p>超线程：<br>超线程是英特尔开发出来的一项技术，使得单个处理器可以象两个逻辑处理器那样运行，这样单个处理器以并行执行线程。<br>这里的单个处理器也可以理解为CPU的一个核心；这样便可以理解为什么开启了超线程技术后，逻辑CPU的数目是核心数的两倍了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> brpc </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>编译为什么需要那么多内存</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%BC%96%E8%AF%91%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E9%82%A3%E4%B9%88%E5%A4%9A%E5%86%85%E5%AD%98/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%BC%96%E8%AF%91%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E9%82%A3%E4%B9%88%E5%A4%9A%E5%86%85%E5%AD%98/</url>
-      
-        <content type="html"><![CDATA[<p>报错：<br>virtual memory exhausted: Cannot allocate memory</p>]]></content>
       
       
       <categories>
@@ -1320,11 +1782,11 @@
     
     
     <entry>
-      <title>零拷贝</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E9%9B%B6%E6%8B%B7%E8%B4%9D/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E9%9B%B6%E6%8B%B7%E8%B4%9D/</url>
+      <title>高并发性能调试</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E9%AB%98%E5%B9%B6%E5%8F%91%E6%80%A7%E8%83%BD%E8%B0%83%E8%AF%95%E7%BB%8F%E9%AA%8C/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E9%AB%98%E5%B9%B6%E5%8F%91%E6%80%A7%E8%83%BD%E8%B0%83%E8%AF%95%E7%BB%8F%E9%AA%8C/</url>
       
-        <content type="html"><![CDATA[<p>让用户空间和内核空间操作同一个地址：虚拟内存</p>]]></content>
+        <content type="html"><![CDATA[<p><a href="https://cppfans.org/2167.html">https://cppfans.org/2167.html</a></p>]]></content>
       
       
       <categories>
@@ -1343,11 +1805,11 @@
     
     
     <entry>
-      <title>高并发性能调试</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E9%AB%98%E5%B9%B6%E5%8F%91%E6%80%A7%E8%83%BD%E8%B0%83%E8%AF%95%E7%BB%8F%E9%AA%8C/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E9%AB%98%E5%B9%B6%E5%8F%91%E6%80%A7%E8%83%BD%E8%B0%83%E8%AF%95%E7%BB%8F%E9%AA%8C/</url>
+      <title>零拷贝</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E9%9B%B6%E6%8B%B7%E8%B4%9D/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E9%9B%B6%E6%8B%B7%E8%B4%9D/</url>
       
-        <content type="html"><![CDATA[<p><a href="https://cppfans.org/2167.html">https://cppfans.org/2167.html</a></p>]]></content>
+        <content type="html"><![CDATA[<p>让用户空间和内核空间操作同一个地址：虚拟内存</p>]]></content>
       
       
       <categories>
@@ -1435,9 +1897,9 @@
     
     
     <entry>
-      <title>大页内存实现原理</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%A4%A7%E9%A1%B5%E5%86%85%E5%AD%98%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%A4%A7%E9%A1%B5%E5%86%85%E5%AD%98%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
+      <title>多线程日志的不交叉输出是如何实现的</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%97%A5%E5%BF%97%E7%9A%84%E4%B8%8D%E4%BA%A4%E5%8F%89%E8%BE%93%E5%87%BA%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%97%A5%E5%BF%97%E7%9A%84%E4%B8%8D%E4%BA%A4%E5%8F%89%E8%BE%93%E5%87%BA%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -1458,9 +1920,9 @@
     
     
     <entry>
-      <title>多线程日志的不交叉输出是如何实现的</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%97%A5%E5%BF%97%E7%9A%84%E4%B8%8D%E4%BA%A4%E5%8F%89%E8%BE%93%E5%87%BA%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%97%A5%E5%BF%97%E7%9A%84%E4%B8%8D%E4%BA%A4%E5%8F%89%E8%BE%93%E5%87%BA%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84/</url>
+      <title>大页内存实现原理</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%A4%A7%E9%A1%B5%E5%86%85%E5%AD%98%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%A4%A7%E9%A1%B5%E5%86%85%E5%AD%98%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -1504,11 +1966,57 @@
     
     
     <entry>
+      <title>用户态锁和内核锁</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%94%A8%E6%88%B7%E6%80%81%E9%94%81%E5%92%8C%E5%86%85%E6%A0%B8%E9%94%81/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%94%A8%E6%88%B7%E6%80%81%E9%94%81%E5%92%8C%E5%86%85%E6%A0%B8%E9%94%81/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> brpc </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>常用库文件所在目录</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%B8%B8%E7%94%A8%E5%BA%93%E6%96%87%E4%BB%B6%E6%89%80%E5%9C%A8%E7%9B%AE%E5%BD%95/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%B8%B8%E7%94%A8%E5%BA%93%E6%96%87%E4%BB%B6%E6%89%80%E5%9C%A8%E7%9B%AE%E5%BD%95/</url>
       
         <content type="html"><![CDATA[<p>libibverbs.so<br>&#x2F;usr&#x2F;lib64&#x2F;libibverbs.so</p><p>libmlx5.so<br>&#x2F;usr&#x2F;lib64&#x2F;libmlx5.so</p><p>libnl.so</p><p>libnuma.so<br>&#x2F;usr&#x2F;lib64&#x2F;libnuma.so</p><p>这类问题解决办法，替换原有机器的相应库</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> brpc </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>火焰图解读</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%81%AB%E7%84%B0%E5%9B%BE%E8%A7%A3%E8%AF%BB/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%81%AB%E7%84%B0%E5%9B%BE%E8%A7%A3%E8%AF%BB/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://gperftools.github.io/gperftools/cpuprofile.html">https://gperftools.github.io/gperftools/cpuprofile.html</a></p>]]></content>
       
       
       <categories>
@@ -1573,57 +2081,57 @@
     
     
     <entry>
-      <title>火焰图解读</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%81%AB%E7%84%B0%E5%9B%BE%E8%A7%A3%E8%AF%BB/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%81%AB%E7%84%B0%E5%9B%BE%E8%A7%A3%E8%AF%BB/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://gperftools.github.io/gperftools/cpuprofile.html">https://gperftools.github.io/gperftools/cpuprofile.html</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> brpc </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>用户态锁和内核锁</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%94%A8%E6%88%B7%E6%80%81%E9%94%81%E5%92%8C%E5%86%85%E6%A0%B8%E9%94%81/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E7%94%A8%E6%88%B7%E6%80%81%E9%94%81%E5%92%8C%E5%86%85%E6%A0%B8%E9%94%81/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> brpc </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>flatmap和hashmap</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/flatmap%E5%92%8Chashmap/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/flatmap%E5%92%8Chashmap/</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> brpc </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>gdb原理，为什么有的段错误用gdb就不能复现了</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/gdb%E5%8E%9F%E7%90%86%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E6%AE%B5%E9%94%99%E8%AF%AF%E7%94%A8gdb%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%A4%8D%E7%8E%B0%E4%BA%86/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/gdb%E5%8E%9F%E7%90%86%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E6%AE%B5%E9%94%99%E8%AF%AF%E7%94%A8gdb%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%A4%8D%E7%8E%B0%E4%BA%86/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> brpc </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>taskset的使用</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/taskset%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/taskset%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<p>taskset (util-linux-ng 2.17.2)<br>usage: taskset [options] [mask | cpu-list] [pid | cmd [args…]]<br>set or get the affinity of a process</p><p>  -p, –pid                  operate on existing given pid<br>  -c, –cpu-list             display and specify cpus in list format<br>  -h, –help                 display this help<br>  -V, –version              output version information</p><p>The default behavior is to run a new command:<br>  taskset 03 sshd -b 1024<br>You can retrieve the mask of an existing task:<br>  taskset -p 700<br>Or set it:<br>  taskset -p 03 700<br>List format uses a comma-separated list instead of a mask:<br>  taskset -pc 0,3,7-11 700<br>Ranges in list format can take a stride argument:<br>  e.g. 0-31:2 is equivalent to mask 0x55555555</p><p>举例：taskset -cp 0,3 9726</p><p>如何用taskset启动一个程序呢<br>下面的使用不生效：<br>taskset [options] mask command [arg]…<br>taskset 0×00000003 google-chrome</p>]]></content>
       
       
       <categories>
@@ -1688,29 +2196,6 @@
     
     
     <entry>
-      <title>taskset的使用</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/taskset%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/taskset%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-      
-        <content type="html"><![CDATA[<p>taskset (util-linux-ng 2.17.2)<br>usage: taskset [options] [mask | cpu-list] [pid | cmd [args…]]<br>set or get the affinity of a process</p><p>  -p, –pid                  operate on existing given pid<br>  -c, –cpu-list             display and specify cpus in list format<br>  -h, –help                 display this help<br>  -V, –version              output version information</p><p>The default behavior is to run a new command:<br>  taskset 03 sshd -b 1024<br>You can retrieve the mask of an existing task:<br>  taskset -p 700<br>Or set it:<br>  taskset -p 03 700<br>List format uses a comma-separated list instead of a mask:<br>  taskset -pc 0,3,7-11 700<br>Ranges in list format can take a stride argument:<br>  e.g. 0-31:2 is equivalent to mask 0x55555555</p><p>举例：taskset -cp 0,3 9726</p><p>如何用taskset启动一个程序呢<br>下面的使用不生效：<br>taskset [options] mask command [arg]…<br>taskset 0×00000003 google-chrome</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> brpc </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>一些操作的常见用时</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E7%9A%84%E5%B8%B8%E8%A7%81%E7%94%A8%E6%97%B6/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E7%9A%84%E5%B8%B8%E8%A7%81%E7%94%A8%E6%97%B6/</url>
@@ -1757,29 +2242,6 @@
     
     
     <entry>
-      <title>原子变量为什么比锁要快一些</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%8E%9F%E5%AD%90%E5%8F%98%E9%87%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%AF%94%E9%94%81%E8%A6%81%E5%BF%AB%E4%B8%80%E4%BA%9B/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%8E%9F%E5%AD%90%E5%8F%98%E9%87%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%AF%94%E9%94%81%E8%A6%81%E5%BF%AB%E4%B8%80%E4%BA%9B/</url>
-      
-        <content type="html"><![CDATA[<p>原子变量<br>互斥锁<br>自旋锁</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> brpc </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>同步和异步RPC</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5RPC/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5RPC/</url>
@@ -1803,11 +2265,11 @@
     
     
     <entry>
-      <title>gdb原理，为什么有的段错误用gdb就不能复现了</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/gdb%E5%8E%9F%E7%90%86%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E6%AE%B5%E9%94%99%E8%AF%AF%E7%94%A8gdb%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%A4%8D%E7%8E%B0%E4%BA%86/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/gdb%E5%8E%9F%E7%90%86%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E6%AE%B5%E9%94%99%E8%AF%AF%E7%94%A8gdb%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%A4%8D%E7%8E%B0%E4%BA%86/</url>
+      <title>原子变量为什么比锁要快一些</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%8E%9F%E5%AD%90%E5%8F%98%E9%87%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%AF%94%E9%94%81%E8%A6%81%E5%BF%AB%E4%B8%80%E4%BA%9B/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/%E5%8E%9F%E5%AD%90%E5%8F%98%E9%87%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%AF%94%E9%94%81%E8%A6%81%E5%BF%AB%E4%B8%80%E4%BA%9B/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>原子变量<br>互斥锁<br>自旋锁</p>]]></content>
       
       
       <categories>
@@ -1872,11 +2334,11 @@
     
     
     <entry>
-      <title>bthread_id锁机制分析</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/bthread_id%E9%94%81%E6%9C%BA%E5%88%B6%E5%88%86%E6%9E%90/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/bthread_id%E9%94%81%E6%9C%BA%E5%88%B6%E5%88%86%E6%9E%90/</url>
+      <title>bthread栈大小</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/bthread%E6%A0%88%E5%A4%A7%E5%B0%8F/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/bthread%E6%A0%88%E5%A4%A7%E5%B0%8F/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><a href="https://aandds.com/blog/go-stack.html">https://aandds.com/blog/go-stack.html</a></p>]]></content>
       
       
       <categories>
@@ -1895,11 +2357,11 @@
     
     
     <entry>
-      <title>bthread栈大小</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/bthread%E6%A0%88%E5%A4%A7%E5%B0%8F/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/bthread%E6%A0%88%E5%A4%A7%E5%B0%8F/</url>
+      <title>bthread_id锁机制分析</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/bthread_id%E9%94%81%E6%9C%BA%E5%88%B6%E5%88%86%E6%9E%90/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/bthread_id%E9%94%81%E6%9C%BA%E5%88%B6%E5%88%86%E6%9E%90/</url>
       
-        <content type="html"><![CDATA[<p><a href="https://aandds.com/blog/go-stack.html">https://aandds.com/blog/go-stack.html</a></p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       <categories>
@@ -1941,9 +2403,9 @@
     
     
     <entry>
-      <title>cache伪共享</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cache%E4%BC%AA%E5%85%B1%E4%BA%AB/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cache%E4%BC%AA%E5%85%B1%E4%BA%AB/</url>
+      <title>cpu profile对性能测试的影响</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cpu%20profile%E5%AF%B9%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E7%9A%84%E5%BD%B1%E5%93%8D/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cpu%20profile%E5%AF%B9%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E7%9A%84%E5%BD%B1%E5%93%8D/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -1964,32 +2426,9 @@
     
     
     <entry>
-      <title>core和cpu的区别</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/core%E5%92%8Ccpu%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/core%E5%92%8Ccpu%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-      
-        <content type="html"><![CDATA[<p>core是物理核，cpu是逻辑核</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> brpc </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>cpu profile对性能测试的影响</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cpu%20profile%E5%AF%B9%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E7%9A%84%E5%BD%B1%E5%93%8D/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cpu%20profile%E5%AF%B9%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E7%9A%84%E5%BD%B1%E5%93%8D/</url>
+      <title>cache伪共享</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cache%E4%BC%AA%E5%85%B1%E4%BA%AB/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/cache%E4%BC%AA%E5%85%B1%E4%BA%AB/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -2033,11 +2472,11 @@
     
     
     <entry>
-      <title>BRPC的负载均衡</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/BRPC%E7%9A%84%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/BRPC%E7%9A%84%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</url>
+      <title>core和cpu的区别</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/core%E5%92%8Ccpu%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/core%E5%92%8Ccpu%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
       
-        <content type="html"><![CDATA[<p>线程池思路：在Socket map Insert的时候为每一个polling thread创建一个与之对应的Socket，每一个Socket map中的Socket对应一个vector。这个vector中的Socket不出现在Socket map中。</p><p>负载均衡时候的Socket是什么时候创建的呢？<br>已经找到了，会在负载均衡的ResetServers函数里面创建</p>]]></content>
+        <content type="html"><![CDATA[<p>core是物理核，cpu是逻辑核</p>]]></content>
       
       
       <categories>
@@ -2056,11 +2495,11 @@
     
     
     <entry>
-      <title>JEMALLOC TCMALLOC</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/JEMALLOC%20TCMALLOC/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/JEMALLOC%20TCMALLOC/</url>
+      <title>BRPC的负载均衡</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/BRPC%E7%9A%84%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/BRPC%E7%9A%84%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</url>
       
-        <content type="html"><![CDATA[<p>JEMALLOC</p><ol><li>线程局部缓存</li><li>多个内存池，多个线程争同一个锁的机会少。但是要整合多个内存池</li><li>倾向于分配地址空间较小的内存，地址连续，局部性好</li></ol><p>TCMALLOC</p><ol><li>线程局部缓存</li><li>一个总内存池</li><li>随机分配<br>总之就是简单</li></ol><p>实验：如果仅仅通过多次new和delete测试，TCMALLOC的性能好于JEMALLOC，原因是TCMALLOC简单；但是在实际业务中，JEMALLOC更好</p><p>内存分配器模型：多线程，持续且随机地申请和释放<br>实际业务并不是：持续且随机地申请和释放，job粒度，申请，操作，释放。一个job申请的内存永远不会被另一个job释放<br>优化方向：<br>短生命周期→运行时只分配，不释放，整体消亡→统一释放，碎片重整合并<br>渐进饱和实例→实例级别重用（brpc object pool）<br>可重建的实例→碎片内存重整</p>]]></content>
+        <content type="html"><![CDATA[<p>线程池思路：在Socket map Insert的时候为每一个polling thread创建一个与之对应的Socket，每一个Socket map中的Socket对应一个vector。这个vector中的Socket不出现在Socket map中。</p><p>负载均衡时候的Socket是什么时候创建的呢？<br>已经找到了，会在负载均衡的ResetServers函数里面创建</p>]]></content>
       
       
       <categories>
@@ -2102,57 +2541,34 @@
     
     
     <entry>
+      <title>JEMALLOC TCMALLOC</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/JEMALLOC%20TCMALLOC/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/JEMALLOC%20TCMALLOC/</url>
+      
+        <content type="html"><![CDATA[<p>JEMALLOC</p><ol><li>线程局部缓存</li><li>多个内存池，多个线程争同一个锁的机会少。但是要整合多个内存池</li><li>倾向于分配地址空间较小的内存，地址连续，局部性好</li></ol><p>TCMALLOC</p><ol><li>线程局部缓存</li><li>一个总内存池</li><li>随机分配<br>总之就是简单</li></ol><p>实验：如果仅仅通过多次new和delete测试，TCMALLOC的性能好于JEMALLOC，原因是TCMALLOC简单；但是在实际业务中，JEMALLOC更好</p><p>内存分配器模型：多线程，持续且随机地申请和释放<br>实际业务并不是：持续且随机地申请和释放，job粒度，申请，操作，释放。一个job申请的内存永远不会被另一个job释放<br>优化方向：<br>短生命周期→运行时只分配，不释放，整体消亡→统一释放，碎片重整合并<br>渐进饱和实例→实例级别重用（brpc object pool）<br>可重建的实例→碎片内存重整</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> brpc </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RPC 实战与核心原理</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/RPC%20%E5%AE%9E%E6%88%98%E4%B8%8E%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/RPC%20%E5%AE%9E%E6%88%98%E4%B8%8E%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86/</url>
       
         <content type="html"><![CDATA[<p><a href="https://time.geekbang.org/column/article/199649">https://time.geekbang.org/column/article/199649</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> brpc </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>brpc cache bouncing</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/brpc%20cache%20bouncing/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/brpc%20cache%20bouncing/</url>
-      
-        <content type="html"><![CDATA[<p>cache bouncing</p><p>当event dispatcher把任务递给worker时，用户逻辑不得不从一个核跳到另一个核，相关的cpu cache必须同步过来，这是微秒级的操作，并不很快。如果worker能直接在event dispatcher所在的核上运行就更好了，因为大部分系统（在这个时间尺度下）并没有密集的事件流，尽快运行已有的任务的优先级高于event dispatcher获取新事件。另一个例子是收到response后最好在当前cpu core唤醒发起request的阻塞线程。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> brpc </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>accept和epoll_wait的惊群效应</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/accept%E5%92%8Cepoll_wait%E7%9A%84%E6%83%8A%E7%BE%A4%E6%95%88%E5%BA%94/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/accept%E5%92%8Cepoll_wait%E7%9A%84%E6%83%8A%E7%BE%A4%E6%95%88%E5%BA%94/</url>
-      
-        <content type="html"><![CDATA[<p>惊群现象（thundering herd）就是当多个进程和线程在同时阻塞等待同一个事件时，如果这个事件发生，会唤醒所有的进程，但最终只可能有一个进程&#x2F;线程对该事件进行处理，其他进程&#x2F;线程会在失败后重新休眠，这种性能浪费就是惊群。</p><p>accept 惊群<br>考虑如下场景：<br>主进程创建 socket、bind、 listen 之后，fork 出多个子进程，每个子进程都开始循环处理（accept)这个 socket。每个进程都阻塞在 accpet 上，当一个新的连接到来时，所有的进程都会被唤醒，但其中只有一个进程会 accept 成功，其余皆失败，重新休眠。这就是 accept 惊群。<br>那么这个问题真的存在吗？<br>事实上，历史上，Linux 的 accpet 确实存在惊群问题，但现在的内核都解决该问题了。即，当多个进程&#x2F;线程都阻塞在对同一个 socket 的 accept 调用上时，当有一个新的连接到来，内核只会唤醒一个进程，其他进程保持休眠，压根就不会被唤醒。</p><p>epoll 惊群<br>如上所述，accept 已经不存在惊群问题，但 epoll 上还是存在惊群问题。即，如果多个进程&#x2F;线程阻塞在监听同一个 listening socket fd 的 epoll_wait 上，当有一个新的连接到来时，所有的进程都会被唤醒。<br>考虑如下场景：<br>主进程创建 socket、bind、 listen 后，将该 socket 加入到 epoll 中，然后 fork 出多个子进程，每个进程都阻塞在 epoll_wait 上，如果有事件到来，则判断该事件是否是该 socket 上的事件，如果是，说明有新的连接到来了，则进行 accept 操作。为了简化处理，忽略后续的读写以及对 accept 返回的新的套接字的处理，直接断开连接。<br>那么，当新的连接到来时，是否每个阻塞在 epoll_wait 上的进程都会被唤醒呢？<br>很多博客中提到，测试表明虽然 epoll_wait 不会像 accept 那样只唤醒一个进程&#x2F;线程，但也不会把所有的进程&#x2F;线程都唤醒。<br>发现确实如上面那篇博客里所说，当我模拟发起一个请求时，只有一个或少数几个进程被唤醒了。<br>也就是说，到目前为止，还没有得到一个确定的答案。但后来，在下面这篇博客中看到这样一个评论：<a href="http://blog.csdn.net/spch2008/article/details/18301357">http://blog.csdn.net/spch2008/article/details/18301357</a><br>这个总结，需要进一步阐述，你的实验，看上去是只有 4 个进程唤醒了，而事实上，其余进程没有被唤醒的原因是你的某个进程已经处理完这个 accept，内核队列上已经没有这个事件，无需唤醒其他进程。你可以在 epoll 获知这个 accept 事件的时候，不要立即去处理，而是 sleep 下，这样所有的进程都会被唤起。<br>看到这个评论后，我顿时如醍醐灌顶，重新修改了上面的测试程序，即在 epoll_wait 返回后，加了个 sleep 语句，这时再测试，果然发现所有的进程都被唤醒了。<br>所以，epoll_wait 上的惊群确实是存在的。</p><p>为什么内核对 accept 的惊群做了处理，而现在仍然存在 epoll 的惊群现象呢？<br>我想，应该是这样的：<br>accept 确实应该只能被一个进程调用成功，内核很清楚这一点。但 epoll 不一样，他监听的文件描述符，除了可能后续被 accept 调用外，还有可能是其他网络 IO 事件的，而其他 IO 事件是否只能由一个进程处理，是不一定的，内核不能保证这一点，这是一个由用户决定的事情，例如可能一个文件会由多个进程来读写。所以，对 epoll 的惊群，内核则不予处理。</p><p>参考:<a href="https://pureage.info/2015/12/22/thundering-herd.html">https://pureage.info/2015/12/22/thundering-herd.html</a></p>]]></content>
       
       
       <categories>
@@ -2194,11 +2610,57 @@
     
     
     <entry>
+      <title>accept和epoll_wait的惊群效应</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/accept%E5%92%8Cepoll_wait%E7%9A%84%E6%83%8A%E7%BE%A4%E6%95%88%E5%BA%94/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/accept%E5%92%8Cepoll_wait%E7%9A%84%E6%83%8A%E7%BE%A4%E6%95%88%E5%BA%94/</url>
+      
+        <content type="html"><![CDATA[<p>惊群现象（thundering herd）就是当多个进程和线程在同时阻塞等待同一个事件时，如果这个事件发生，会唤醒所有的进程，但最终只可能有一个进程&#x2F;线程对该事件进行处理，其他进程&#x2F;线程会在失败后重新休眠，这种性能浪费就是惊群。</p><p>accept 惊群<br>考虑如下场景：<br>主进程创建 socket、bind、 listen 之后，fork 出多个子进程，每个子进程都开始循环处理（accept)这个 socket。每个进程都阻塞在 accpet 上，当一个新的连接到来时，所有的进程都会被唤醒，但其中只有一个进程会 accept 成功，其余皆失败，重新休眠。这就是 accept 惊群。<br>那么这个问题真的存在吗？<br>事实上，历史上，Linux 的 accpet 确实存在惊群问题，但现在的内核都解决该问题了。即，当多个进程&#x2F;线程都阻塞在对同一个 socket 的 accept 调用上时，当有一个新的连接到来，内核只会唤醒一个进程，其他进程保持休眠，压根就不会被唤醒。</p><p>epoll 惊群<br>如上所述，accept 已经不存在惊群问题，但 epoll 上还是存在惊群问题。即，如果多个进程&#x2F;线程阻塞在监听同一个 listening socket fd 的 epoll_wait 上，当有一个新的连接到来时，所有的进程都会被唤醒。<br>考虑如下场景：<br>主进程创建 socket、bind、 listen 后，将该 socket 加入到 epoll 中，然后 fork 出多个子进程，每个进程都阻塞在 epoll_wait 上，如果有事件到来，则判断该事件是否是该 socket 上的事件，如果是，说明有新的连接到来了，则进行 accept 操作。为了简化处理，忽略后续的读写以及对 accept 返回的新的套接字的处理，直接断开连接。<br>那么，当新的连接到来时，是否每个阻塞在 epoll_wait 上的进程都会被唤醒呢？<br>很多博客中提到，测试表明虽然 epoll_wait 不会像 accept 那样只唤醒一个进程&#x2F;线程，但也不会把所有的进程&#x2F;线程都唤醒。<br>发现确实如上面那篇博客里所说，当我模拟发起一个请求时，只有一个或少数几个进程被唤醒了。<br>也就是说，到目前为止，还没有得到一个确定的答案。但后来，在下面这篇博客中看到这样一个评论：<a href="http://blog.csdn.net/spch2008/article/details/18301357">http://blog.csdn.net/spch2008/article/details/18301357</a><br>这个总结，需要进一步阐述，你的实验，看上去是只有 4 个进程唤醒了，而事实上，其余进程没有被唤醒的原因是你的某个进程已经处理完这个 accept，内核队列上已经没有这个事件，无需唤醒其他进程。你可以在 epoll 获知这个 accept 事件的时候，不要立即去处理，而是 sleep 下，这样所有的进程都会被唤起。<br>看到这个评论后，我顿时如醍醐灌顶，重新修改了上面的测试程序，即在 epoll_wait 返回后，加了个 sleep 语句，这时再测试，果然发现所有的进程都被唤醒了。<br>所以，epoll_wait 上的惊群确实是存在的。</p><p>为什么内核对 accept 的惊群做了处理，而现在仍然存在 epoll 的惊群现象呢？<br>我想，应该是这样的：<br>accept 确实应该只能被一个进程调用成功，内核很清楚这一点。但 epoll 不一样，他监听的文件描述符，除了可能后续被 accept 调用外，还有可能是其他网络 IO 事件的，而其他 IO 事件是否只能由一个进程处理，是不一定的，内核不能保证这一点，这是一个由用户决定的事情，例如可能一个文件会由多个进程来读写。所以，对 epoll 的惊群，内核则不予处理。</p><p>参考:<a href="https://pureage.info/2015/12/22/thundering-herd.html">https://pureage.info/2015/12/22/thundering-herd.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> brpc </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>brpc内存管理</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/brpc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/brpc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</url>
       
         <content type="html"><![CDATA[<p>内存管理总是程序中的重要一环，在多线程时代，一个好的内存分配大都在如下两点间权衡：</p><ul><li>线程间竞争少。内存分配的粒度大都比较小，对性能敏感，如果不同的线程在大多数分配时会竞争同一份资源或同一把锁，性能将会非常糟糕，原因无外乎和cache一致性有关，已被大量的malloc方案证明。</li><li>浪费的空间少。如果每个线程各申请各的，速度也许不错，但万一一个线程总是申请，另一个线程总是释放，内存就爆炸了。线程之间总是要共享内存的，如何共享就是方案的关键了。<br>一般的应用可以使用tcmalloc、jemalloc等成熟的内存分配方案，但这对于较为底层，关注性能长尾的应用是不够的。多线程框架广泛地通过传递对象的ownership来让问题异步化，如何让分配这些小对象的开销变的更小是值得研究的问题。其中的一个特点较为显著：</li><li>大多数结构是等长的。<br>这个属性可以大幅简化内存分配的过程，获得比通用malloc更稳定、快速的性能。brpc中的ResourcePool和ObjectPool即提供这类分配。</li></ul><p>这篇文章不鼓励用户使用ResourcePool或ObjectPool，事实上我们反对用户在程序中使用这两个类。因为”等长“的副作用是某个类型独占了一部分内存，这些内存无法再被其他类型使用，如果不加控制的滥用，反而会在程序中产生大量彼此隔离的内存分配体系，既浪费内存也不见得会有更好的性能。</p><p>resource pool使用block和block group来管理内存，对象都是在block里分配的，新建对象会根据块容量等算出一个resourceId，后续的获取和归还都用根据这个Id算出便宜量来定位到具体的资源位置。</p><p>resource pool全局只有一个单例，blockgroup和block都是resource pool单例层面的，而每个pthread会有一个thread local 的local pool，local pool有一个FreeChunk类型的_cur_free变量，保存着局部的空闲资源的id，resource pool里还有一个全局的_free_chunks变量，保存着全局空闲资源的id，Localpool还有一个Block*类型的_cur_block变量，一个指向resource pool某个block的指针。</p><p>对于获取资源，如果_cur_free还有空闲的对象资源Id，那么直接找到对应资源返回，否则看_free_chunks里有没有FreeChunk，有的话拷贝到_cur_free，然后取出空闲的对象资源Id，找到对应资源返回。如果局部和全局都没有已有空闲资源则优先在_cur_block上新创建，如果这个指针为null或者指向的block已经满了，则调用resource pool的add_block新建一个block并赋值给_cur_block，并在上创建对象。这里提到的创建对象都是在已有内存上创建，没有分配内存的过程，所以比较快。</p><p>对于归还资源，则是优先将id存在_cur_free，如果_cur_free满了则把_cur_free push到_free_chunks里，空_cur_free后再将当前id放入_cur_free里。</p><p>无论是获取还是归还都会有在局部空闲id列表和全局空闲id列表之间进行memcpy的情况，是比较耗性能的，但是因为仅仅是很小的resourceId数据的拷贝，消耗还是可接受的。总的来说，就是利用提前的块内存分配以及对象的重复利用，实现了高性能的资源分配。<br>————————————————<br>版权声明：本文为CSDN博主「wxj1992」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/wxj1992/article/details/100128333">https://blog.csdn.net/wxj1992/article/details/100128333</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> brpc </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>brpc cache bouncing</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/brpc%20cache%20bouncing/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/brpc/brpc%20cache%20bouncing/</url>
+      
+        <content type="html"><![CDATA[<p>cache bouncing</p><p>当event dispatcher把任务递给worker时，用户逻辑不得不从一个核跳到另一个核，相关的cpu cache必须同步过来，这是微秒级的操作，并不很快。如果worker能直接在event dispatcher所在的核上运行就更好了，因为大部分系统（在这个时间尺度下）并没有密集的事件流，尽快运行已有的任务的优先级高于event dispatcher获取新事件。另一个例子是收到response后最好在当前cpu core唤醒发起request的阻塞线程。</p>]]></content>
       
       
       <categories>
@@ -2286,6 +2748,29 @@
     
     
     <entry>
+      <title>cpu虚拟化</title>
+      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/QUMU/cpu%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
+      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/QUMU/cpu%E8%99%9A%E6%8B%9F%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<p>虚拟机里面的一个 vcpu 对应物理机上的一个线程，然后这个线程被调度到某个物理 CPU 上</p><p>虚拟机的多个核是多个线程。但是线程在物理机上能不能分到物理核，是物理机的操作系统定的。</p><p>问题：虚拟机上的一个vcpu是一个物理机上的线程；那么虚拟机上的线程如何在虚拟机的cpu上面调度呢？是虚拟机负责调度的还是物理机负责调度的？<br>答案：虚拟机负责</p><p>多核环境下虚拟机系统的两级调度框架。客户操作系统负责第2 级调度,即线程或进程在vCPU 上的调度（将核心线程映射到相应的VCPU上）。虚拟机监视器负责第1 级调度, 即vCPU在物理处理单元上的调度。</p><p>虚拟机只有在实例化cpu的时候才会真正创建物理线程吗？<br>应该是的<br>在主机看来，它只能看到虚拟机的CPU，即vCPU被调度执行，但是vCPU具体执行什么东西，它是看不见的。vCPU对主机系统来说，只是一个普通的线程，主机系统可以对其进行调度。而当执行vCPU线程时，CPU切换到VMX non-root operation，进入到虚拟机的世界，这个时候，vCPU的执行就像是物理主机上物理CPU的执行，也是正常地对虚拟机内的线程进行调度，只是对于一个物理CPU来说，它要么执行主机的程序，要么执行vCPU所需要执行的程序，两者在时间上是错开的。</p><p>例如，有一个qemu进程（其中包括一个vCPU线程）和一个vim进程，而在qemu虚拟机中存在一个word进程和一个IE进程。对于物理CPU而言，它可能会调度并执行vCPU线程，在它执行vCPU线程期间，它会切换到VMX non-root operation模式，这个时候，物理CPU看到的资源，包括地址空间，I&#x2F;O设备是对应到虚拟机的。在vCPU线程执行期间，它可能会调度并执行word进程或者IE进程。所以物理CPU在时间的维度上，是在主机和虚拟机之间不停切换的。</p><p>作者：河马<br>链接：<a href="https://www.zhihu.com/question/284712870/answer/726486082">https://www.zhihu.com/question/284712870/answer/726486082</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> work </category>
+          
+          <category> 项目相关 </category>
+          
+          <category> QUMU </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>QEMU KVM</title>
       <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/QUMU/QEMU%20KVM/"/>
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/QUMU/QEMU%20KVM/</url>
@@ -2314,29 +2799,6 @@
       <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/QUMU/attribute__((packed))/</url>
       
         <content type="html"><![CDATA[<p> <strong>attribute</strong> ((packed))的作用就是告诉编译器取消结构在编译过程中的优化对齐,按照实际占用字节数进行对齐，是GCC特有的语法。<br><strong>attribute</strong> ((aligned(n)))的作用就是告诉编译器在编译过程中按照n字节对齐。常常用来在结构体后面进行修饰。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> 项目相关 </category>
-          
-          <category> QUMU </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>cpu虚拟化</title>
-      <link href="/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/QUMU/cpu%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
-      <url>/2024/03/31/work/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/QUMU/cpu%E8%99%9A%E6%8B%9F%E5%8C%96/</url>
-      
-        <content type="html"><![CDATA[<p>虚拟机里面的一个 vcpu 对应物理机上的一个线程，然后这个线程被调度到某个物理 CPU 上</p><p>虚拟机的多个核是多个线程。但是线程在物理机上能不能分到物理核，是物理机的操作系统定的。</p><p>问题：虚拟机上的一个vcpu是一个物理机上的线程；那么虚拟机上的线程如何在虚拟机的cpu上面调度呢？是虚拟机负责调度的还是物理机负责调度的？<br>答案：虚拟机负责</p><p>多核环境下虚拟机系统的两级调度框架。客户操作系统负责第2 级调度,即线程或进程在vCPU 上的调度（将核心线程映射到相应的VCPU上）。虚拟机监视器负责第1 级调度, 即vCPU在物理处理单元上的调度。</p><p>虚拟机只有在实例化cpu的时候才会真正创建物理线程吗？<br>应该是的<br>在主机看来，它只能看到虚拟机的CPU，即vCPU被调度执行，但是vCPU具体执行什么东西，它是看不见的。vCPU对主机系统来说，只是一个普通的线程，主机系统可以对其进行调度。而当执行vCPU线程时，CPU切换到VMX non-root operation，进入到虚拟机的世界，这个时候，vCPU的执行就像是物理主机上物理CPU的执行，也是正常地对虚拟机内的线程进行调度，只是对于一个物理CPU来说，它要么执行主机的程序，要么执行vCPU所需要执行的程序，两者在时间上是错开的。</p><p>例如，有一个qemu进程（其中包括一个vCPU线程）和一个vim进程，而在qemu虚拟机中存在一个word进程和一个IE进程。对于物理CPU而言，它可能会调度并执行vCPU线程，在它执行vCPU线程期间，它会切换到VMX non-root operation模式，这个时候，物理CPU看到的资源，包括地址空间，I&#x2F;O设备是对应到虚拟机的。在vCPU线程执行期间，它可能会调度并执行word进程或者IE进程。所以物理CPU在时间的维度上，是在主机和虚拟机之间不停切换的。</p><p>作者：河马<br>链接：<a href="https://www.zhihu.com/question/284712870/answer/726486082">https://www.zhihu.com/question/284712870/answer/726486082</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
       
       
       <categories>
@@ -2401,11 +2863,11 @@
     
     
     <entry>
-      <title>知识结构</title>
-      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84/"/>
-      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84/</url>
+      <title>红黑树起源</title>
+      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%BA%A2%E9%BB%91%E6%A0%91%E8%B5%B7%E6%BA%90/"/>
+      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%BA%A2%E9%BB%91%E6%A0%91%E8%B5%B7%E6%BA%90/</url>
       
-        <content type="html"><![CDATA[<p><img src="/images/algrithm.jpg" alt="Image"></p>]]></content>
+        <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/tiancai/p/9072813.html">https://www.cnblogs.com/tiancai/p/9072813.html</a></p>]]></content>
       
       
       <categories>
@@ -2447,11 +2909,11 @@
     
     
     <entry>
-      <title>红黑树起源</title>
-      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%BA%A2%E9%BB%91%E6%A0%91%E8%B5%B7%E6%BA%90/"/>
-      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%BA%A2%E9%BB%91%E6%A0%91%E8%B5%B7%E6%BA%90/</url>
+      <title>知识结构</title>
+      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84/"/>
+      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84/</url>
       
-        <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/tiancai/p/9072813.html">https://www.cnblogs.com/tiancai/p/9072813.html</a></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/images/algrithm.jpg" alt="Image"></p>]]></content>
       
       
       <categories>
@@ -2537,11 +2999,11 @@
     
     
     <entry>
-      <title>LLVM Clang GCC</title>
-      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/LLVM%20Clang%20GCC/"/>
-      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/LLVM%20Clang%20GCC/</url>
+      <title>GLIBC编译</title>
+      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/GLIBC%E7%BC%96%E8%AF%91/"/>
+      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/GLIBC%E7%BC%96%E8%AF%91/</url>
       
-        <content type="html"><![CDATA[<p>参考链接：<br><a href="https://www.cnblogs.com/qoakzmxncb/archive/2013/04/18/3029105.html">https://www.cnblogs.com/qoakzmxncb/archive/2013/04/18/3029105.html</a><br><a href="https://www.huaweicloud.com/articles/c377af2c0a8a91e49edf113039dd6867.html">https://www.huaweicloud.com/articles/c377af2c0a8a91e49edf113039dd6867.html</a><br>简史，讲的不错：<a href="http://yuxiaopeng.com/2016/08/compiler/">http://yuxiaopeng.com/2016/08/compiler/</a><br><a href="http://history.programmer.com.cn/9436/">http://history.programmer.com.cn/9436/</a></p><p>Clang 是一个 C、C++、Objective-C 和 Objective-C++ 编程语言的编译器前端，采用底层虚拟机（LLVM）作为后端。至于为什么有了 GCC 还要开发 Clang？Clang 相比 GCC 又有什么优势呢？网上有很多信息可以参考，这里只简单提两点：（1）Clang 采用的是 BSD 协议的许可证，而 GCC 采用的是 GPL 协议，显然前者更为宽松；（2）Clang 是一个高度模块化开发的轻量级编译器，编译速度快、占用内存小、有着友好的出错提示。</p><p>然后说下 Clang 背后的 LLVM（Low Level Virtual Machine）。LLVM 是以 BSD 许可来开发的开源的编译器框架系统，基于 C++ 编写而成，利用虚拟技术来优化以任意程序语言编写的程序的编译时间、链接时间、运行时间以及空闲时间，最早以 C&#x2F;C++ 为实现对象，对开发者保持开放，并兼容已有脚本。LLVM 计划启动于 2000 年，最初由 University of Illinois at Urbana-Champaign 的 Chris Lattner 主持开展，2006 年 Chris Lattner 加盟苹果公司并致力于 LLVM 在苹果公司开发体系中的应用，所以苹果公司也是 LLVM 计划的主要资助者。目前 LLVM 因其宽松的许可协议，更好的模块化、更清晰的架构，成为很多厂商或者组织的选择，已经被苹果 IOS 开发工具、Facebook、Google 等各大公司采用，像 Swift、Rust 等语言都选择了以 LLVM 为后端。<br>在理解 LLVM 之前，先说下传统编译器的工作原理，基本上都是三段式的，可以分为前端、优化器和后端。前端负责解析源代码，检查语法错误，并将其翻译为抽象的语法树；优化器对这一中间代码进行优化，试图使代码更高效；后端则负责将优化器优化后的中间代码转换为目标机器的代码，这一过程后端会最大化的利用目标机器的特殊指令，以提高代码的性能。基于这个认知，我们可以认为 LLVM 包括了两个概念：一个广义的 LLVM 和一个狭义的 LLVM 。广义的 LLVM 指的是一个完整的 LLVM 编译器框架系统，包括了前端、优化器、后端、众多的库函数以及很多的模块；而狭义的 LLVM 则是聚焦于编译器后端功能的一系列模块和库，包括代码优化、代码生成、JIT 等。<br>下面大概讲一讲 LLVM 和 Clang 的关系。我们将它们对应于传统的编译器当中的几个独立的部分，这样能够更加方便明确的表述出它们之前的关系。</p>]]></content>
+        <content type="html"><![CDATA[<p>strings &#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libc.so.6 | grep GLIBC_</p><p>目前最新的版本，可以看到没有2.27</p><p>apt-cache policy libc6</p><p>误删libc<br>LD_PRELOAD&#x3D;&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libc.so.6.bak ln -sf &#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libc-2.24.so &#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libc.so.6</p><p>2.27版本报错无法解决，最后编译2.28版本<br>2.27报错是：multiple definitions of _<em>nss</em>*</p><p>如何编译glibc:<br><a href="https://www.gnu.org/software/libc/manual/html_node/Configuring-and-compiling.html">https://www.gnu.org/software/libc/manual/html_node/Configuring-and-compiling.html</a></p><p>wget <a href="https://mirrors.tuna.tsinghua.edu.cn/gnu/libc/glibc-2.28.tar.gz">https://mirrors.tuna.tsinghua.edu.cn/gnu/libc/glibc-2.28.tar.gz</a><br>tar -zxvf glibc-2.28.tar.gz</p><p>make build; cd build<br>..&#x2F;configure –prefix&#x3D;&#x2F;opt&#x2F;glibc-2.27 CFLAGS&#x3D;”-O3 -Wno-zero-length-bounds -Wno-missing-attributes -Wno-array-bounds -Wno-maybe-uninitialized”<br>make<br>make install</p>]]></content>
       
       
       <categories>
@@ -2560,11 +3022,11 @@
     
     
     <entry>
-      <title>GLIBC编译</title>
-      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/GLIBC%E7%BC%96%E8%AF%91/"/>
-      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/GLIBC%E7%BC%96%E8%AF%91/</url>
+      <title>LLVM Clang GCC</title>
+      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/LLVM%20Clang%20GCC/"/>
+      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/LLVM%20Clang%20GCC/</url>
       
-        <content type="html"><![CDATA[<p>strings &#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libc.so.6 | grep GLIBC_</p><p>目前最新的版本，可以看到没有2.27</p><p>apt-cache policy libc6</p><p>误删libc<br>LD_PRELOAD&#x3D;&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libc.so.6.bak ln -sf &#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libc-2.24.so &#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libc.so.6</p><p>2.27版本报错无法解决，最后编译2.28版本<br>2.27报错是：multiple definitions of _<em>nss</em>*</p><p>如何编译glibc:<br><a href="https://www.gnu.org/software/libc/manual/html_node/Configuring-and-compiling.html">https://www.gnu.org/software/libc/manual/html_node/Configuring-and-compiling.html</a></p><p>wget <a href="https://mirrors.tuna.tsinghua.edu.cn/gnu/libc/glibc-2.28.tar.gz">https://mirrors.tuna.tsinghua.edu.cn/gnu/libc/glibc-2.28.tar.gz</a><br>tar -zxvf glibc-2.28.tar.gz</p><p>make build; cd build<br>..&#x2F;configure –prefix&#x3D;&#x2F;opt&#x2F;glibc-2.27 CFLAGS&#x3D;”-O3 -Wno-zero-length-bounds -Wno-missing-attributes -Wno-array-bounds -Wno-maybe-uninitialized”<br>make<br>make install</p>]]></content>
+        <content type="html"><![CDATA[<p>参考链接：<br><a href="https://www.cnblogs.com/qoakzmxncb/archive/2013/04/18/3029105.html">https://www.cnblogs.com/qoakzmxncb/archive/2013/04/18/3029105.html</a><br><a href="https://www.huaweicloud.com/articles/c377af2c0a8a91e49edf113039dd6867.html">https://www.huaweicloud.com/articles/c377af2c0a8a91e49edf113039dd6867.html</a><br>简史，讲的不错：<a href="http://yuxiaopeng.com/2016/08/compiler/">http://yuxiaopeng.com/2016/08/compiler/</a><br><a href="http://history.programmer.com.cn/9436/">http://history.programmer.com.cn/9436/</a></p><p>Clang 是一个 C、C++、Objective-C 和 Objective-C++ 编程语言的编译器前端，采用底层虚拟机（LLVM）作为后端。至于为什么有了 GCC 还要开发 Clang？Clang 相比 GCC 又有什么优势呢？网上有很多信息可以参考，这里只简单提两点：（1）Clang 采用的是 BSD 协议的许可证，而 GCC 采用的是 GPL 协议，显然前者更为宽松；（2）Clang 是一个高度模块化开发的轻量级编译器，编译速度快、占用内存小、有着友好的出错提示。</p><p>然后说下 Clang 背后的 LLVM（Low Level Virtual Machine）。LLVM 是以 BSD 许可来开发的开源的编译器框架系统，基于 C++ 编写而成，利用虚拟技术来优化以任意程序语言编写的程序的编译时间、链接时间、运行时间以及空闲时间，最早以 C&#x2F;C++ 为实现对象，对开发者保持开放，并兼容已有脚本。LLVM 计划启动于 2000 年，最初由 University of Illinois at Urbana-Champaign 的 Chris Lattner 主持开展，2006 年 Chris Lattner 加盟苹果公司并致力于 LLVM 在苹果公司开发体系中的应用，所以苹果公司也是 LLVM 计划的主要资助者。目前 LLVM 因其宽松的许可协议，更好的模块化、更清晰的架构，成为很多厂商或者组织的选择，已经被苹果 IOS 开发工具、Facebook、Google 等各大公司采用，像 Swift、Rust 等语言都选择了以 LLVM 为后端。<br>在理解 LLVM 之前，先说下传统编译器的工作原理，基本上都是三段式的，可以分为前端、优化器和后端。前端负责解析源代码，检查语法错误，并将其翻译为抽象的语法树；优化器对这一中间代码进行优化，试图使代码更高效；后端则负责将优化器优化后的中间代码转换为目标机器的代码，这一过程后端会最大化的利用目标机器的特殊指令，以提高代码的性能。基于这个认知，我们可以认为 LLVM 包括了两个概念：一个广义的 LLVM 和一个狭义的 LLVM 。广义的 LLVM 指的是一个完整的 LLVM 编译器框架系统，包括了前端、优化器、后端、众多的库函数以及很多的模块；而狭义的 LLVM 则是聚焦于编译器后端功能的一系列模块和库，包括代码优化、代码生成、JIT 等。<br>下面大概讲一讲 LLVM 和 Clang 的关系。我们将它们对应于传统的编译器当中的几个独立的部分，这样能够更加方便明确的表述出它们之前的关系。</p>]]></content>
       
       
       <categories>
@@ -2698,11 +3160,11 @@
     
     
     <entry>
-      <title>为啥 redis 单线程模型也能效率这么高？</title>
-      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E4%B8%BA%E5%95%A5%20redis%20%E5%8D%95%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%E4%B9%9F%E8%83%BD%E6%95%88%E7%8E%87%E8%BF%99%E4%B9%88%E9%AB%98/"/>
-      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E4%B8%BA%E5%95%A5%20redis%20%E5%8D%95%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%E4%B9%9F%E8%83%BD%E6%95%88%E7%8E%87%E8%BF%99%E4%B9%88%E9%AB%98/</url>
+      <title>什么是XDP</title>
+      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E4%BB%80%E4%B9%88%E6%98%AFXDP/"/>
+      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E4%BB%80%E4%B9%88%E6%98%AFXDP/</url>
       
-        <content type="html"><![CDATA[<p>为啥 redis 单线程模型也能效率这么高？</p><ul><li>纯内存操作。</li><li>核心是基于非阻塞的 IO 多路复用机制。</li><li>C 语言实现，一般来说，C 语言实现的程序“距离”操作系统更近，执行速度相对会更快。</li><li>单线程反而避免了多线程的频繁上下文切换问题，预防了多线程可能产生的竞争问题。</li></ul>]]></content>
+        <content type="html"><![CDATA[<p>内核自带的 XDP 技术，在网络包进入内核协议栈前，就对其进行处理。这样，也可以达到目的，获得很好的性能</p>]]></content>
       
       
       <categories>
@@ -2719,11 +3181,11 @@
     
     
     <entry>
-      <title>什么是XDP</title>
-      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E4%BB%80%E4%B9%88%E6%98%AFXDP/"/>
-      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E4%BB%80%E4%B9%88%E6%98%AFXDP/</url>
+      <title>为啥 redis 单线程模型也能效率这么高？</title>
+      <link href="/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E4%B8%BA%E5%95%A5%20redis%20%E5%8D%95%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%E4%B9%9F%E8%83%BD%E6%95%88%E7%8E%87%E8%BF%99%E4%B9%88%E9%AB%98/"/>
+      <url>/2024/03/31/work/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E4%B8%BA%E5%95%A5%20redis%20%E5%8D%95%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%E4%B9%9F%E8%83%BD%E6%95%88%E7%8E%87%E8%BF%99%E4%B9%88%E9%AB%98/</url>
       
-        <content type="html"><![CDATA[<p>内核自带的 XDP 技术，在网络包进入内核协议栈前，就对其进行处理。这样，也可以达到目的，获得很好的性能</p>]]></content>
+        <content type="html"><![CDATA[<p>为啥 redis 单线程模型也能效率这么高？</p><ul><li>纯内存操作。</li><li>核心是基于非阻塞的 IO 多路复用机制。</li><li>C 语言实现，一般来说，C 语言实现的程序“距离”操作系统更近，执行速度相对会更快。</li><li>单线程反而避免了多线程的频繁上下文切换问题，预防了多线程可能产生的竞争问题。</li></ul>]]></content>
       
       
       <categories>
@@ -2932,106 +3394,18 @@
     
     
     <entry>
-      <title>typingclub</title>
-      <link href="/2024/03/31/odnwo/typingclub/"/>
-      <url>/2024/03/31/odnwo/typingclub/</url>
+      <title>推荐资料</title>
+      <link href="/2024/03/31/work/Thinking/%E6%8E%A8%E8%8D%90%E8%B5%84%E6%96%99/"/>
+      <url>/2024/03/31/work/Thinking/%E6%8E%A8%E8%8D%90%E8%B5%84%E6%96%99/</url>
       
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="wrong password" data-whm="wrong check result">  <script id="hbeData" type="hbeData" data-hmacdigest="037797aad22a824d203c4882c68d7d344c48326ff7f265d08f4c982900809ed9">1c4f476f3e7125f5cf24ac6b2eb45793b45862b8ec4a87a617adcf7a7b47e8562ef0efb0f75a6d69e52310b998c595894f68880ed81dbe1313feddb659e430b37322e2cf58581e1d30b8252389fec0cbe50276ca1f909bfbba112c40e766b05e0ea3e002058ae16cec083082fa6c240c9b71aac3b7c1c8eb2b003835b4f0e756</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">The blog is private</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      <categories>
-          
-          <category> odnwo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> private </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>cp软链接</title>
-      <link href="/2024/03/31/odnwo/Tools/cp%E8%BD%AF%E9%93%BE%E6%8E%A5/"/>
-      <url>/2024/03/31/odnwo/Tools/cp%E8%BD%AF%E9%93%BE%E6%8E%A5/</url>
-      
-        <content type="html"><![CDATA[<p>若要cp软链接对应的真实文件，cp -L </p>]]></content>
+        <content type="html"><![CDATA[<p><a href="https://geektutu.com/post/geerpc.html">https://geektutu.com/post/geerpc.html</a></p><p><a href="https://www.byteisland.com/nvme-%E8%AE%BE%E8%AE%A1%E9%80%BB%E8%BE%91%E4%B8%8E%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/">https://www.byteisland.com/nvme-%E8%AE%BE%E8%AE%A1%E9%80%BB%E8%BE%91%E4%B8%8E%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/</a></p>]]></content>
       
       
       <categories>
           
-          <category> odnwo </category>
+          <category> work </category>
           
-          <category> Tools </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>linux文件传输</title>
-      <link href="/2024/03/31/odnwo/Tools/linux%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/"/>
-      <url>/2024/03/31/odnwo/Tools/linux%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/</url>
-      
-        <content type="html"><![CDATA[<p>nc传输文件；<br>nc $ip 8000 &lt; file<br>nc -l 8000 &gt; file</p><p>用python开启一个简单的服务器：<br>python -m SimpleHTTPServer 8080<br>wget <a href="http://ip:8080/file.txt">http://ip:8080/file.txt</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> odnwo </category>
-          
-          <category> Tools </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>PDF因为有密码无法打印</title>
-      <link href="/2024/03/31/odnwo/Tools/pdf%E6%96%87%E4%BB%B6%E8%A7%A3%E5%AF%86/"/>
-      <url>/2024/03/31/odnwo/Tools/pdf%E6%96%87%E4%BB%B6%E8%A7%A3%E5%AF%86/</url>
-      
-        <content type="html"><![CDATA[<p>PDF因为有密码无法打印：<br><a href="https://www.ilovepdf.com/zh-cn/unlock_pdf">https://www.ilovepdf.com/zh-cn/unlock_pdf</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> odnwo </category>
-          
-          <category> Tools </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>tar</title>
-      <link href="/2024/03/31/odnwo/Tools/tar/"/>
-      <url>/2024/03/31/odnwo/Tools/tar/</url>
-      
-        <content type="html"><![CDATA[<p>.tar.xz<br>tar xvJf  ***.tar.xz</p><p>解压 tar zxvf 文件名.tar.gz<br>压缩 tar zcvf 文件名.tar.gz 待压缩的文件名</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> odnwo </category>
-          
-          <category> Tools </category>
+          <category> Thinking </category>
           
       </categories>
       
@@ -3056,73 +3430,6 @@
           
       </categories>
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>推荐资料</title>
-      <link href="/2024/03/31/work/Thinking/%E6%8E%A8%E8%8D%90%E8%B5%84%E6%96%99/"/>
-      <url>/2024/03/31/work/Thinking/%E6%8E%A8%E8%8D%90%E8%B5%84%E6%96%99/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://geektutu.com/post/geerpc.html">https://geektutu.com/post/geerpc.html</a></p><p><a href="https://www.byteisland.com/nvme-%E8%AE%BE%E8%AE%A1%E9%80%BB%E8%BE%91%E4%B8%8E%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/">https://www.byteisland.com/nvme-%E8%AE%BE%E8%AE%A1%E9%80%BB%E8%BE%91%E4%B8%8E%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> work </category>
-          
-          <category> Thinking </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>revolut</title>
-      <link href="/2024/03/31/Vison/revolut/"/>
-      <url>/2024/03/31/Vison/revolut/</url>
-      
-        <content type="html"><![CDATA[<p>revolut可以创建虚拟卡，用于付款，防止被盗刷<br>metamask用apple pay一直付款失败，用revolut的虚拟卡可以成功付款</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Vison </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>英文名</title>
-      <link href="/2024/03/31/odnwo/ME/%E8%8B%B1%E6%96%87%E5%90%8D/"/>
-      <url>/2024/03/31/odnwo/ME/%E8%8B%B1%E6%96%87%E5%90%8D/</url>
-      
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="wrong password" data-whm="wrong check result">  <script id="hbeData" type="hbeData" data-hmacdigest="336dab37a3d26379c2640489adcb5ed9de9b203973875d14bde7ed8a9b9f2f0a">1c4f476f3e7125f5cf24ac6b2eb45793b48b5add7bde1a3184e037d1e4e8813b87cf7c0a8e5f4ebf41e92641e8eb2f7aa8bb0d8564ee06ca8cfec0ff7ab0b6b542ad5e9321e0ffc2aaa25e5d954c133fd70d3a8bd07d4dc3da2d27f7c2ac5e4a308eeab5c923edbc464dc9ec8d002a1c</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">The blog is private</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      <categories>
-          
-          <category> odnwo </category>
-          
-          <category> ME </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> private </tag>
-            
-        </tags>
       
     </entry>
     
@@ -3177,19 +3484,27 @@
     
     
     <entry>
-      <title>量化交易</title>
-      <link href="/2024/03/31/Invest/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/"/>
-      <url>/2024/03/31/Invest/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</url>
+      <title>英文名</title>
+      <link href="/2024/03/31/odnwo/ME/%E8%8B%B1%E6%96%87%E5%90%8D/"/>
+      <url>/2024/03/31/odnwo/ME/%E8%8B%B1%E6%96%87%E5%90%8D/</url>
       
-        <content type="html"><![CDATA[<p>quantconnect<br><a href="mailto:&#x6f;&#100;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#x6f;&#100;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;</a><br>2+Wo</p>]]></content>
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="wrong password" data-whm="wrong check result">  <script id="hbeData" type="hbeData" data-hmacdigest="336dab37a3d26379c2640489adcb5ed9de9b203973875d14bde7ed8a9b9f2f0a">1c4f476f3e7125f5cf24ac6b2eb45793b48b5add7bde1a3184e037d1e4e8813b87cf7c0a8e5f4ebf41e92641e8eb2f7aa8bb0d8564ee06ca8cfec0ff7ab0b6b542ad5e9321e0ffc2aaa25e5d954c133fd70d3a8bd07d4dc3da2d27f7c2ac5e4a308eeab5c923edbc464dc9ec8d002a1c</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">The blog is private</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
       
       <categories>
           
-          <category> Invest </category>
+          <category> odnwo </category>
+          
+          <category> ME </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> private </tag>
+            
+        </tags>
       
     </entry>
     
@@ -3234,32 +3549,11 @@
     
     
     <entry>
-      <title>希望，永远都在</title>
-      <link href="/2024/03/31/Life/Reading/%E5%B8%8C%E6%9C%9B%EF%BC%8C%E6%B0%B8%E8%BF%9C%E9%83%BD%E5%9C%A8/"/>
-      <url>/2024/03/31/Life/Reading/%E5%B8%8C%E6%9C%9B%EF%BC%8C%E6%B0%B8%E8%BF%9C%E9%83%BD%E5%9C%A8/</url>
+      <title>权利密码</title>
+      <link href="/2024/03/31/Life/Thinking/%E6%9D%83%E5%88%A9%E5%AF%86%E7%A0%81/"/>
+      <url>/2024/03/31/Life/Thinking/%E6%9D%83%E5%88%A9%E5%AF%86%E7%A0%81/</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Life </category>
-          
-          <category> Reading </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>提问的智慧</title>
-      <link href="/2024/03/31/Life/Thinking/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
-      <url>/2024/03/31/Life/Thinking/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md">https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md</a></p>]]></content>
+        <content type="html"><![CDATA[<p>一套成功的组织体系正常运转的大前提，不应该是假设多数成员都能经得起各种诱惑的考验，相反，要尽可能避免去考验任性。</p>]]></content>
       
       
       <categories>
@@ -3276,11 +3570,11 @@
     
     
     <entry>
-      <title>权利密码</title>
-      <link href="/2024/03/31/Life/Thinking/%E6%9D%83%E5%88%A9%E5%AF%86%E7%A0%81/"/>
-      <url>/2024/03/31/Life/Thinking/%E6%9D%83%E5%88%A9%E5%AF%86%E7%A0%81/</url>
+      <title>提问的智慧</title>
+      <link href="/2024/03/31/Life/Thinking/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
+      <url>/2024/03/31/Life/Thinking/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/</url>
       
-        <content type="html"><![CDATA[<p>一套成功的组织体系正常运转的大前提，不应该是假设多数成员都能经得起各种诱惑的考验，相反，要尽可能避免去考验任性。</p>]]></content>
+        <content type="html"><![CDATA[<p><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md">https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md</a></p>]]></content>
       
       
       <categories>
